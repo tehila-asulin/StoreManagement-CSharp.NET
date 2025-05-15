@@ -1,0 +1,5 @@
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BlTest\obj\Debug\net7.0\BlTest.csproj.AssemblyReference.cache
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BlTest\obj\Debug\net7.0\BlTest.GeneratedMSBuildEditorConfig.editorconfig
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BlTest\obj\Debug\net7.0\BlTest.AssemblyInfoInputs.cache
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BlTest\obj\Debug\net7.0\BlTest.AssemblyInfo.cs
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BlTest\obj\Debug\net7.0\BlTest.csproj.CoreCompileInputs.cache

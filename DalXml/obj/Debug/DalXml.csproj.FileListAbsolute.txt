@@ -1,0 +1,52 @@
+M:\פרויקט c#.net\DoteNet2025_4384_6364\bin\DalXml.deps.json
+M:\פרויקט c#.net\DoteNet2025_4384_6364\bin\DalXml.dll
+M:\פרויקט c#.net\DoteNet2025_4384_6364\bin\DalXml.pdb
+M:\פרויקט c#.net\DoteNet2025_4384_6364\DalXml\obj\Debug\DalXml.csproj.AssemblyReference.cache
+M:\פרויקט c#.net\DoteNet2025_4384_6364\DalXml\obj\Debug\DalXml.GeneratedMSBuildEditorConfig.editorconfig
+M:\פרויקט c#.net\DoteNet2025_4384_6364\DalXml\obj\Debug\DalXml.AssemblyInfoInputs.cache
+M:\פרויקט c#.net\DoteNet2025_4384_6364\DalXml\obj\Debug\DalXml.AssemblyInfo.cs
+M:\פרויקט c#.net\DoteNet2025_4384_6364\DalXml\obj\Debug\DalXml.csproj.CoreCompileInputs.cache
+M:\פרויקט c#.net\DoteNet2025_4384_6364\DalXml\obj\Debug\DalXml.csproj.CopyComplete
+M:\פרויקט c#.net\DoteNet2025_4384_6364\DalXml\obj\Debug\DalXml.dll
+M:\פרויקט c#.net\DoteNet2025_4384_6364\DalXml\obj\Debug\refint\DalXml.dll
+M:\פרויקט c#.net\DoteNet2025_4384_6364\DalXml\obj\Debug\DalXml.pdb
+M:\פרויקט c#.net\DoteNet2025_4384_6364\DalXml\obj\Debug\ref\DalXml.dll
+M:\פרויקט c#.net\DoteNet2025_7107_6539\bin\DalXml.deps.json
+M:\פרויקט c#.net\DoteNet2025_7107_6539\bin\DalXml.dll
+M:\פרויקט c#.net\DoteNet2025_7107_6539\bin\DalXml.pdb
+M:\פרויקט c#.net\DoteNet2025_7107_6539\DalXml\obj\Debug\DalXml.csproj.AssemblyReference.cache
+M:\פרויקט c#.net\DoteNet2025_7107_6539\DalXml\obj\Debug\DalXml.GeneratedMSBuildEditorConfig.editorconfig
+M:\פרויקט c#.net\DoteNet2025_7107_6539\DalXml\obj\Debug\DalXml.AssemblyInfoInputs.cache
+M:\פרויקט c#.net\DoteNet2025_7107_6539\DalXml\obj\Debug\DalXml.AssemblyInfo.cs
+M:\פרויקט c#.net\DoteNet2025_7107_6539\DalXml\obj\Debug\DalXml.csproj.CoreCompileInputs.cache
+M:\פרויקט c#.net\DoteNet2025_7107_6539\DalXml\obj\Debug\DalXml.csproj.Up2Date
+M:\פרויקט c#.net\DoteNet2025_7107_6539\DalXml\obj\Debug\DalXml.dll
+M:\פרויקט c#.net\DoteNet2025_7107_6539\DalXml\obj\Debug\refint\DalXml.dll
+M:\פרויקט c#.net\DoteNet2025_7107_6539\DalXml\obj\Debug\DalXml.pdb
+M:\פרויקט c#.net\DoteNet2025_7107_6539\DalXml\obj\Debug\ref\DalXml.dll
+D:\פרויקט c#.net\DoteNet2025_7107_6539\bin\DalXml.deps.json
+D:\פרויקט c#.net\DoteNet2025_7107_6539\bin\DalXml.dll
+D:\פרויקט c#.net\DoteNet2025_7107_6539\bin\DalXml.pdb
+D:\פרויקט c#.net\DoteNet2025_7107_6539\DalXml\obj\Debug\DalXml.csproj.AssemblyReference.cache
+D:\פרויקט c#.net\DoteNet2025_7107_6539\DalXml\obj\Debug\DalXml.GeneratedMSBuildEditorConfig.editorconfig
+D:\פרויקט c#.net\DoteNet2025_7107_6539\DalXml\obj\Debug\DalXml.AssemblyInfoInputs.cache
+D:\פרויקט c#.net\DoteNet2025_7107_6539\DalXml\obj\Debug\DalXml.AssemblyInfo.cs
+D:\פרויקט c#.net\DoteNet2025_7107_6539\DalXml\obj\Debug\DalXml.csproj.CoreCompileInputs.cache
+D:\פרויקט c#.net\DoteNet2025_7107_6539\DalXml\obj\Debug\DalXml.csproj.CopyComplete
+D:\פרויקט c#.net\DoteNet2025_7107_6539\DalXml\obj\Debug\DalXml.dll
+D:\פרויקט c#.net\DoteNet2025_7107_6539\DalXml\obj\Debug\refint\DalXml.dll
+D:\פרויקט c#.net\DoteNet2025_7107_6539\DalXml\obj\Debug\DalXml.pdb
+D:\פרויקט c#.net\DoteNet2025_7107_6539\DalXml\obj\Debug\ref\DalXml.dll
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\bin\DalXml.deps.json
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\bin\DalXml.dll
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\bin\DalXml.pdb
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\DalXml\obj\Debug\DalXml.csproj.AssemblyReference.cache
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\DalXml\obj\Debug\DalXml.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\DalXml\obj\Debug\DalXml.AssemblyInfoInputs.cache
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\DalXml\obj\Debug\DalXml.AssemblyInfo.cs
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\DalXml\obj\Debug\DalXml.csproj.CoreCompileInputs.cache
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\DalXml\obj\Debug\DalXml.csproj.CopyComplete
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\DalXml\obj\Debug\DalXml.dll
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\DalXml\obj\Debug\refint\DalXml.dll
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\DalXml\obj\Debug\DalXml.pdb
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\DalXml\obj\Debug\ref\DalXml.dll

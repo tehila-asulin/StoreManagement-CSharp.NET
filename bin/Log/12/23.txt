@@ -1,0 +1,47 @@
+23/12/2024 11:01:23	Dal.ProductImplementation.Read:	not found  product in this id: 11
+23/12/2024 11:03:00	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:03:00	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:03:00	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:03:00	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:03:01	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:03:01	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:03:01	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:03:01	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:03:01	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:03:01	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:03:01	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:03:01	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:03:01	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:03:01	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:03:01	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:03:01	Dal.CustomerImplementation.Create:	insert customer in the system id:111
+23/12/2024 11:03:01	Dal.CustomerImplementation.Create:	insert customer in the system id:222
+23/12/2024 11:03:01	Dal.CustomerImplementation.Create:	insert customer in the system id:333
+23/12/2024 11:03:01	Dal.SaleImplementation.Create:	insert sale in id:0
+23/12/2024 11:03:01	Dal.SaleImplementation.Create:	insert sale in id:0
+23/12/2024 11:03:01	Dal.SaleImplementation.Create:	insert sale in id:0
+23/12/2024 11:03:12	Dal.ProductImplementation.ReadAll:	read all products
+23/12/2024 11:03:21	Dal.CustomerImplementation.ReadAll:	read all customers
+23/12/2024 11:03:29	Dal.CustomerImplementation.Delete:	delete customer in id:111
+23/12/2024 11:03:29	Dal.CustomerImplementation.Read:	read customer in id: 111
+23/12/2024 11:04:22	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:04:22	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:04:22	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:04:22	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:04:22	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:04:22	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:04:22	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:04:22	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:04:22	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:04:22	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:04:22	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:04:22	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:04:22	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:04:22	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:04:22	Dal.ProductImplementation.Create:	insert product in  id:0
+23/12/2024 11:04:22	Dal.CustomerImplementation.Create:	insert customer in id:111
+23/12/2024 11:04:22	Dal.CustomerImplementation.Create:	insert customer in id:222
+23/12/2024 11:04:22	Dal.CustomerImplementation.Create:	insert customer in id:333
+23/12/2024 11:04:22	Dal.SaleImplementation.Create:	insert sale in id:0
+23/12/2024 11:04:22	Dal.SaleImplementation.Create:	insert sale in id:0
+23/12/2024 11:04:22	Dal.SaleImplementation.Create:	insert sale in id:0

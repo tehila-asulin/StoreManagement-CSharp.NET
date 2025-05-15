@@ -1,0 +1,64 @@
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BlTest\obj\Debug\BlTest.csproj.AssemblyReference.cache
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BlTest\obj\Debug\BlTest.GeneratedMSBuildEditorConfig.editorconfig
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BlTest\obj\Debug\BlTest.AssemblyInfoInputs.cache
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BlTest\obj\Debug\BlTest.AssemblyInfo.cs
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BlTest\obj\Debug\BlTest.csproj.CoreCompileInputs.cache
+M:\פרויקט c#.net\DoteNet2025_4384_6364\bin\BlTest.exe
+M:\פרויקט c#.net\DoteNet2025_4384_6364\bin\BlTest.deps.json
+M:\פרויקט c#.net\DoteNet2025_4384_6364\bin\BlTest.runtimeconfig.json
+M:\פרויקט c#.net\DoteNet2025_4384_6364\bin\BlTest.dll
+M:\פרויקט c#.net\DoteNet2025_4384_6364\bin\BlTest.pdb
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BlTest\obj\Debug\BlTest.csproj.CopyComplete
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BlTest\obj\Debug\BlTest.dll
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BlTest\obj\Debug\refint\BlTest.dll
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BlTest\obj\Debug\BlTest.pdb
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BlTest\obj\Debug\BlTest.genruntimeconfig.cache
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BlTest\obj\Debug\ref\BlTest.dll
+M:\פרויקט c#.net\DoteNet2025_7107_6539\bin\BlTest.exe
+M:\פרויקט c#.net\DoteNet2025_7107_6539\bin\BlTest.deps.json
+M:\פרויקט c#.net\DoteNet2025_7107_6539\bin\BlTest.runtimeconfig.json
+M:\פרויקט c#.net\DoteNet2025_7107_6539\bin\BlTest.dll
+M:\פרויקט c#.net\DoteNet2025_7107_6539\bin\BlTest.pdb
+M:\פרויקט c#.net\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.csproj.AssemblyReference.cache
+M:\פרויקט c#.net\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.GeneratedMSBuildEditorConfig.editorconfig
+M:\פרויקט c#.net\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.AssemblyInfoInputs.cache
+M:\פרויקט c#.net\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.AssemblyInfo.cs
+M:\פרויקט c#.net\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.csproj.CoreCompileInputs.cache
+M:\פרויקט c#.net\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.csproj.Up2Date
+M:\פרויקט c#.net\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.dll
+M:\פרויקט c#.net\DoteNet2025_7107_6539\BlTest\obj\Debug\refint\BlTest.dll
+M:\פרויקט c#.net\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.pdb
+M:\פרויקט c#.net\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.genruntimeconfig.cache
+M:\פרויקט c#.net\DoteNet2025_7107_6539\BlTest\obj\Debug\ref\BlTest.dll
+D:\פרויקט c#.net\DoteNet2025_7107_6539\bin\BlTest.exe
+D:\פרויקט c#.net\DoteNet2025_7107_6539\bin\BlTest.deps.json
+D:\פרויקט c#.net\DoteNet2025_7107_6539\bin\BlTest.runtimeconfig.json
+D:\פרויקט c#.net\DoteNet2025_7107_6539\bin\BlTest.dll
+D:\פרויקט c#.net\DoteNet2025_7107_6539\bin\BlTest.pdb
+D:\פרויקט c#.net\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.csproj.AssemblyReference.cache
+D:\פרויקט c#.net\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.GeneratedMSBuildEditorConfig.editorconfig
+D:\פרויקט c#.net\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.AssemblyInfoInputs.cache
+D:\פרויקט c#.net\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.AssemblyInfo.cs
+D:\פרויקט c#.net\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.csproj.CoreCompileInputs.cache
+D:\פרויקט c#.net\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.csproj.CopyComplete
+D:\פרויקט c#.net\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.dll
+D:\פרויקט c#.net\DoteNet2025_7107_6539\BlTest\obj\Debug\refint\BlTest.dll
+D:\פרויקט c#.net\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.pdb
+D:\פרויקט c#.net\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.genruntimeconfig.cache
+D:\פרויקט c#.net\DoteNet2025_7107_6539\BlTest\obj\Debug\ref\BlTest.dll
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\bin\BlTest.exe
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\bin\BlTest.deps.json
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\bin\BlTest.runtimeconfig.json
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\bin\BlTest.dll
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\bin\BlTest.pdb
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.csproj.AssemblyReference.cache
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.AssemblyInfoInputs.cache
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.AssemblyInfo.cs
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.csproj.CoreCompileInputs.cache
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.csproj.CopyComplete
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.dll
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\BlTest\obj\Debug\refint\BlTest.dll
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.pdb
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\BlTest\obj\Debug\BlTest.genruntimeconfig.cache
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\BlTest\obj\Debug\ref\BlTest.dll

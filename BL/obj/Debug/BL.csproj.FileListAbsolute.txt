@@ -1,0 +1,62 @@
+M:\DoteNet2025_7107_6539\BL\obj\Debug\BL.csproj.AssemblyReference.cache
+M:\DoteNet2025_7107_6539\BL\obj\Debug\BL.GeneratedMSBuildEditorConfig.editorconfig
+M:\DoteNet2025_7107_6539\BL\obj\Debug\BL.AssemblyInfoInputs.cache
+M:\DoteNet2025_7107_6539\BL\obj\Debug\BL.AssemblyInfo.cs
+M:\DoteNet2025_7107_6539\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+M:\יד\C# net\project_besad\DoteNet2025_4384_6364\BL\obj\Debug\BL.csproj.AssemblyReference.cache
+M:\יד\C# net\project_besad\DoteNet2025_4384_6364\BL\obj\Debug\BL.GeneratedMSBuildEditorConfig.editorconfig
+M:\יד\C# net\project_besad\DoteNet2025_4384_6364\BL\obj\Debug\BL.AssemblyInfoInputs.cache
+M:\יד\C# net\project_besad\DoteNet2025_4384_6364\BL\obj\Debug\BL.AssemblyInfo.cs
+M:\יד\C# net\project_besad\DoteNet2025_4384_6364\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BL\obj\Debug\BL.csproj.AssemblyReference.cache
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BL\obj\Debug\BL.GeneratedMSBuildEditorConfig.editorconfig
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BL\obj\Debug\BL.AssemblyInfoInputs.cache
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BL\obj\Debug\BL.AssemblyInfo.cs
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+M:\פרויקט c#.net\DoteNet2025_4384_6364\bin\BL.deps.json
+M:\פרויקט c#.net\DoteNet2025_4384_6364\bin\BL.dll
+M:\פרויקט c#.net\DoteNet2025_4384_6364\bin\BL.pdb
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BL\obj\Debug\BL.csproj.CopyComplete
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BL\obj\Debug\BL.dll
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BL\obj\Debug\refint\BL.dll
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BL\obj\Debug\BL.pdb
+M:\פרויקט c#.net\DoteNet2025_4384_6364\BL\obj\Debug\ref\BL.dll
+M:\פרויקט c#.net\DoteNet2025_7107_6539\bin\BL.deps.json
+M:\פרויקט c#.net\DoteNet2025_7107_6539\bin\BL.dll
+M:\פרויקט c#.net\DoteNet2025_7107_6539\bin\BL.pdb
+M:\פרויקט c#.net\DoteNet2025_7107_6539\BL\obj\Debug\BL.csproj.AssemblyReference.cache
+M:\פרויקט c#.net\DoteNet2025_7107_6539\BL\obj\Debug\BL.GeneratedMSBuildEditorConfig.editorconfig
+M:\פרויקט c#.net\DoteNet2025_7107_6539\BL\obj\Debug\BL.AssemblyInfoInputs.cache
+M:\פרויקט c#.net\DoteNet2025_7107_6539\BL\obj\Debug\BL.AssemblyInfo.cs
+M:\פרויקט c#.net\DoteNet2025_7107_6539\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+M:\פרויקט c#.net\DoteNet2025_7107_6539\BL\obj\Debug\BL.csproj.Up2Date
+M:\פרויקט c#.net\DoteNet2025_7107_6539\BL\obj\Debug\BL.dll
+M:\פרויקט c#.net\DoteNet2025_7107_6539\BL\obj\Debug\refint\BL.dll
+M:\פרויקט c#.net\DoteNet2025_7107_6539\BL\obj\Debug\BL.pdb
+M:\פרויקט c#.net\DoteNet2025_7107_6539\BL\obj\Debug\ref\BL.dll
+D:\פרויקט c#.net\DoteNet2025_7107_6539\bin\BL.deps.json
+D:\פרויקט c#.net\DoteNet2025_7107_6539\bin\BL.dll
+D:\פרויקט c#.net\DoteNet2025_7107_6539\bin\BL.pdb
+D:\פרויקט c#.net\DoteNet2025_7107_6539\BL\obj\Debug\BL.csproj.AssemblyReference.cache
+D:\פרויקט c#.net\DoteNet2025_7107_6539\BL\obj\Debug\BL.GeneratedMSBuildEditorConfig.editorconfig
+D:\פרויקט c#.net\DoteNet2025_7107_6539\BL\obj\Debug\BL.AssemblyInfoInputs.cache
+D:\פרויקט c#.net\DoteNet2025_7107_6539\BL\obj\Debug\BL.AssemblyInfo.cs
+D:\פרויקט c#.net\DoteNet2025_7107_6539\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+D:\פרויקט c#.net\DoteNet2025_7107_6539\BL\obj\Debug\BL.csproj.CopyComplete
+D:\פרויקט c#.net\DoteNet2025_7107_6539\BL\obj\Debug\BL.dll
+D:\פרויקט c#.net\DoteNet2025_7107_6539\BL\obj\Debug\refint\BL.dll
+D:\פרויקט c#.net\DoteNet2025_7107_6539\BL\obj\Debug\BL.pdb
+D:\פרויקט c#.net\DoteNet2025_7107_6539\BL\obj\Debug\ref\BL.dll
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\bin\BL.deps.json
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\bin\BL.dll
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\bin\BL.pdb
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\BL\obj\Debug\BL.csproj.AssemblyReference.cache
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\BL\obj\Debug\BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\BL\obj\Debug\BL.AssemblyInfoInputs.cache
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\BL\obj\Debug\BL.AssemblyInfo.cs
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\BL\obj\Debug\BL.csproj.CopyComplete
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\BL\obj\Debug\BL.dll
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\BL\obj\Debug\refint\BL.dll
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\BL\obj\Debug\BL.pdb
+C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\BL\obj\Debug\ref\BL.dll

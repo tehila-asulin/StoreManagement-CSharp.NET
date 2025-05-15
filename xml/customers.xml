@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCustomer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Customer>
+    <Id>111</Id>
+    <Name>shani</Name>
+    <Phone>123456</Phone>
+    <Address>jerusalem</Address>
+  </Customer>
+  <Customer>
+    <Id>222</Id>
+    <Name>teila</Name>
+    <Phone>123456</Phone>
+    <Address>tel aviv</Address>
+  </Customer>
+  <Customer>
+    <Id>333</Id>
+    <Name>miri</Name>
+    <Phone>123456</Phone>
+  </Customer>
+</ArrayOfCustomer>
