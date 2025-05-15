@@ -3,9 +3,11 @@ using DO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
+using Tools;
 
 namespace Dal
 {
@@ -16,7 +18,8 @@ namespace Dal
         List<Customer> list;
         public int Create(Customer item)
         {
-            using(StreamReader sr = new StreamReader(filePath))
+            LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"insert customer in id:{item.Id}");
+            using (StreamReader sr = new StreamReader(filePath))
             {
                 list = serializer.Deserialize(sr) as List<Customer>;
                 list.Add(item);
@@ -29,6 +32,7 @@ namespace Dal
         }
         public void Delete(int id)
         {
+            LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"delete customer in id:{id}");
             using (StreamReader sr = new StreamReader(filePath))
             {
              
@@ -43,6 +47,7 @@ namespace Dal
 
         public Customer? Read(int id)
         {
+            LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"read customer in id: {id}");
             using (StreamReader sr = new StreamReader(filePath))
             {
                 list = serializer.Deserialize(sr) as List<Customer>;
@@ -52,6 +57,7 @@ namespace Dal
 
         public Customer? Read(Func<Customer, bool> filter)
         {
+            LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"read customer");
             using (StreamReader sr = new StreamReader(filePath))
             {
                 list = serializer.Deserialize(sr) as List<Customer>;
@@ -61,6 +67,7 @@ namespace Dal
 
         public List<Customer> ReadAll(Func<Customer, bool>? filter = null)
         {
+            LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"read all customers");
             using (StreamReader sr = new StreamReader(filePath))
             {
                 list = serializer.Deserialize(sr) as List<Customer>;
@@ -72,9 +79,10 @@ namespace Dal
 
         public void Update(Customer item)
         {
-
+            LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"update customer in id:{item.Id}");
             Delete(item.Id);
             Create(item);
         }
     }
 }
+

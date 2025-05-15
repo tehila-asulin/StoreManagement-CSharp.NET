@@ -1,0 +1,10 @@
+16/05/2025 00:29:50	Dal.ProductImplementation.ReadAll:	read all products
+16/05/2025 00:31:18	Dal.ProductImplementation.Create:	insert product in  id:1600
+16/05/2025 00:31:18	Dal.ProductImplementation.ReadAll:	read all products
+16/05/2025 00:32:52	Dal.ProductImplementation.ReadAll:	read all products
+16/05/2025 00:44:34	Dal.ProductImplementation.ReadAll:	read all products
+16/05/2025 00:44:39	Dal.ProductImplementation.Read:	read product int id: 100
+16/05/2025 00:45:09	Dal.ProductImplementation.ReadAll:	read all products
+16/05/2025 00:46:12	Dal.ProductImplementation.Read:	read product int id: 100
+16/05/2025 00:50:51	Dal.ProductImplementation.ReadAll:	read all products
+16/05/2025 00:50:56	Dal.ProductImplementation.Read:	read product int id: 100

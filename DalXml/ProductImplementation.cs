@@ -4,16 +4,17 @@ using DO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using Tools;
 
 namespace Dal
 {
     internal class ProductImplementation : Iproduct
     {
         const string filePath = @"..\xml\products.xml";
-        //const string PRODUCTS = "Products";
         const string PRODUCT = "Product";
         const string PRODUCTID = "barcode";
         const string PRODUCTNAME = "productName";
@@ -22,6 +23,7 @@ namespace Dal
         const string QUANTITYONSTOCK = "quantityInStock";
         public int Create(Product item)
         {
+            LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"insert product in  id:{item.Barcode}");
             XElement productXml = XElement.Load(filePath);
             int nextId = Config.CodeProduct;
             var arrayOfProduct = productXml.Element("ArrayOfProduct");
@@ -49,6 +51,7 @@ namespace Dal
 
         public Product? Read(int barcode)
         {
+            LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"read product int id: {barcode}");
             XElement productXml = XElement.Load(filePath);
             XElement xml = productXml.Descendants(PRODUCTID).First(p => int.Parse(p.Value) == barcode).Parent;
             Product product = new Product(int.Parse(xml.Element(PRODUCTID).Value),
@@ -62,6 +65,7 @@ namespace Dal
 
         public Product? Read(Func<Product, bool> filter)
         {
+            LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"read product");
             XElement productXml = XElement.Load(filePath);
             var products = productXml.Descendants(PRODUCT)
                             .Select(p => new Product(
@@ -76,6 +80,7 @@ namespace Dal
 
         public List<Product> ReadAll(Func<Product, bool>? filter = null)
         {
+            LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"read all products");
             XElement productXml = XElement.Load(filePath);
             var products = productXml.Descendants("Product")
                 .Select(p => new Product(
@@ -89,6 +94,7 @@ namespace Dal
 
         public void Update(Product item)
         {
+            LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"update product in id: {item.Barcode}");
             XElement productXml = XElement.Load(filePath);
             XElement s = productXml.Descendants("barcode").First(id => int.Parse(id.Value) == item.Barcode).Parent;
             s.Element(PRICE).SetValue(item.Price);
@@ -99,3 +105,4 @@ namespace Dal
         }
     }
 }
+

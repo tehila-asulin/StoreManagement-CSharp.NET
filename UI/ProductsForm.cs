@@ -16,7 +16,7 @@ namespace UI
             LoadData();
         }
 
-       
+
         private void LoadData(string filter = "")
         {
             var products = string.IsNullOrWhiteSpace(filter)
@@ -54,14 +54,14 @@ namespace UI
             LoadData();
         }
 
-     
+
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (int.TryParse(txtBarcode.Text, out int barcode))
             {
                 try
                 {
-                    bl.product.Delete(barcode); 
+                    bl.product.Delete(barcode);
                     LoadData();
                     MessageBox.Show("המוצר נמחק בהצלחה.");
                 }
@@ -85,5 +85,22 @@ namespace UI
         {
             LoadData(comboCategory.Text);
         }
+
+        private void btProductById_Click(object sender, EventArgs e)
+        {
+            int productCode = int.TryParse(txtBarcode.Text, out int code) ? code : -1;
+
+            try
+            {
+                var product = bl.product.Read(productCode);
+                dataGridView1.DataSource = new List<BO.Product> { product };
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("המוצר לא נמצא: " + ex.Message);
+                dataGridView1.DataSource = null;
+            }
+        }
+
     }
 }

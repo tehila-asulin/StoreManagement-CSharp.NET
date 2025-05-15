@@ -109,5 +109,12 @@
       <quantityInStock>20</quantityInStock>
       <category>Cleanliness</category>
     </Product>
+    <Product>
+      <barcode>1600</barcode>
+      <productName>אפרסק</productName>
+      <price>10</price>
+      <quantityInStock>25</quantityInStock>
+      <category>FruitVegetables</category>
+    </Product>
   </ArrayOfProduct>
 </ArrayOfProduct>

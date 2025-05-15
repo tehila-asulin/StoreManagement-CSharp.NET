@@ -13,11 +13,7 @@ internal class CustomerImplementation : Icustomer
     public int Create(Customer item)
     {
         LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"insert customer in id:{item.Id}");
-        //foreach (Customer customer in DataSource.customers)
-        //{
-        //    if (customer.Id == item.Id)
-        //        throw new DalIdExistException("this code is exist");
-        //}
+  
         bool c = DataSource.customers.Any(x => x.Id == item.Id);
         if (c)
         {
@@ -33,12 +29,7 @@ internal class CustomerImplementation : Icustomer
 
         LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"read customer in id: {id}");
         Customer customer;
-        //foreach (Customer customer in DataSource.customers)
-        //{
-        //    if (customer.Id == id)
-        //        return customer;
-        //}
-        //throw new DalIdNotFoundException("this code is not exist");
+     
 
         customer = DataSource.customers.FirstOrDefault(x => x.Id == id);
         if (customer == null)

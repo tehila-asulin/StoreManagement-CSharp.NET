@@ -5,10 +5,12 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.Xml.Serialization;
+using Tools;
 
 namespace Dal
 {
@@ -18,30 +20,16 @@ namespace Dal
         XmlSerializer serializer = new XmlSerializer(typeof(List<Sale>));
         List<Sale> list;
 
-        //public int Create(Sale item)
-        //{
-        //    using (StreamReader sr = new StreamReader(filePath))
-        //    {
-        //        int nextId = Config.CodeSale;
-        //        item.BarcodeSale = nextId;
-        //        list = serializer.Deserialize(sr) as List<Sale>;
-        //        list.Add(item);
-        //    }
-        //    using (StreamWriter sw = new StreamWriter(filePath))
-        //    {
-        //        serializer.Serialize(sw, list);
-        //    }
-        //    return item.BarcodeSale;
-        //}
         public int Create(Sale item)    
         {
+            LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"insert sale in id:{item.BarcodeSale}");
             int nextId = 0;
             using (StreamReader sr = new StreamReader(filePath))
             {
                  nextId = Config.CodeSale;
                 list = serializer.Deserialize(sr) as List<Sale>;
 
-                // צור מופע חדש עם כל הנתונים הקיימים של item + ברקוד חדש
+                
                 Sale newSale = new Sale(
                     nextId,
                     item.ProductId,
@@ -66,6 +54,7 @@ namespace Dal
 
         public void Delete(int id)
         {
+            LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"delete sale in id:{id}");
             using (StreamReader sr = new StreamReader(filePath))
             {
                 list = serializer.Deserialize(sr) as List<Sale>;
@@ -79,6 +68,7 @@ namespace Dal
 
         public Sale Read(int id)
         {
+            LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"read sale int id: {id}");
             using (StreamReader sr = new StreamReader(filePath))
             {
                 list = serializer.Deserialize(sr) as List<Sale>;
@@ -88,6 +78,7 @@ namespace Dal
 
         public Sale? Read(Func<Sale, bool> filter)
         {
+            LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"read sale");
             using (StreamReader sr = new StreamReader(filePath))
             {
                 list = serializer.Deserialize(sr) as List<Sale>;
@@ -97,6 +88,7 @@ namespace Dal
 
         public List<Sale> ReadAll(Func<Sale, bool>? filter = null)
         {
+            LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"read all sales");
             using (StreamReader sr = new StreamReader(filePath))
             {
                 list = serializer.Deserialize(sr) as List<Sale>;
@@ -108,8 +100,11 @@ namespace Dal
 
         public void Update(Sale item)
         {
+            LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"update sale in id:{item.BarcodeSale}");
             Delete(item.BarcodeSale);
             Create(item);
         }
     }
 }
+
+

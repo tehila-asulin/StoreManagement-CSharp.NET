@@ -32,6 +32,7 @@ namespace UI
             label4 = new Label();
             label5 = new Label();
             buttonFilter = new Button();
+            btProductById = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -163,9 +164,20 @@ namespace UI
             buttonFilter.UseVisualStyleBackColor = true;
             buttonFilter.Click += buttonFilter_Click;
             // 
+            // btProductById
+            // 
+            btProductById.Location = new Point(256, 343);
+            btProductById.Name = "btProductById";
+            btProductById.Size = new Size(154, 29);
+            btProductById.TabIndex = 15;
+            btProductById.Text = "הצג מוצר לפי ברקוד";
+            btProductById.UseVisualStyleBackColor = true;
+            btProductById.Click += btProductById_Click;
+            // 
             // ProductsForm
             // 
             ClientSize = new Size(535, 378);
+            Controls.Add(btProductById);
             Controls.Add(buttonFilter);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -194,5 +206,6 @@ namespace UI
         private Label label4;
         private Label label5;
         private Button buttonFilter;
+        private Button btProductById;
     }
 }
