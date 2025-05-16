@@ -19,12 +19,10 @@ namespace BlImplementation
             {
                 return _dal.Customer.Create(item.ConversBoCustomerToDoCustomer());
             }
-            catch (Exception ex)
+            catch (DO.DalIdExistException ex)
             {
-                throw new Exception();
+                throw new BLCodeExistException(ex.Message, ex);
             }
-
-
         }
 
         public void Delete(int id)
@@ -33,16 +31,15 @@ namespace BlImplementation
             {
                 _dal.Customer.Delete(id);
             }
-            catch (Exception ex)
+            catch (DO.DalIdNotFoundException ex)
             {
-                throw new Exception();
+                throw new BLIdNotExistException(ex.Message, ex);
             }
-
         }
 
         public bool IsCustomerExist()
         {
-            return false;
+            return false; // לא ממומש עדיין
         }
 
         public Customer? Read(int id)
@@ -52,11 +49,10 @@ namespace BlImplementation
                 DO.Customer doRes = _dal.Customer.Read(id);
                 return doRes.ConversDoCustomerToBoCustomer();
             }
-            catch
+            catch (DO.DalIdNotFoundException ex)
             {
-                return null;
+                throw new BLIdNotExistException(ex.Message, ex);
             }
-
         }
 
         public Customer? Read(Func<Customer, bool> filter)
@@ -66,19 +62,24 @@ namespace BlImplementation
                 DO.Customer customer = _dal.Customer.Read(c => filter(c.ConversDoCustomerToBoCustomer()));
                 return customer.ConversDoCustomerToBoCustomer();
             }
-            catch
+            catch (Exception ex)
             {
-                return null;
+                throw new Exception("Error while reading customer by filter", ex);
             }
-
         }
 
         public List<Customer> ReadAll(Func<Customer, bool>? filter = null)
         {
-            if (filter == null)
-                return _dal.Customer.ReadAll().Select(c => c.ConversDoCustomerToBoCustomer()).ToList();
-            return _dal.Customer.ReadAll(c => filter(c.ConversDoCustomerToBoCustomer())).Select(c => c.ConversDoCustomerToBoCustomer()).ToList();
-
+            try
+            {
+                if (filter == null)
+                    return _dal.Customer.ReadAll().Select(c => c.ConversDoCustomerToBoCustomer()).ToList();
+                return _dal.Customer.ReadAll(c => filter(c.ConversDoCustomerToBoCustomer())).Select(c => c.ConversDoCustomerToBoCustomer()).ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error while reading all customers", ex);
+            }
         }
 
         public void Update(Customer item)
@@ -87,11 +88,10 @@ namespace BlImplementation
             {
                 _dal.Customer.Update(item.ConversBoCustomerToDoCustomer());
             }
-            catch (Exception ex)
+            catch (DO.DalIdNotFoundException ex)
             {
-                throw new Exception();
+                throw new BLIdNotExistException(ex.Message, ex);
             }
-
         }
     }
 }

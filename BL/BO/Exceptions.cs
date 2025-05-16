@@ -13,3 +13,11 @@ public class BLCodeExistException : Exception
     public BLCodeExistException(string message, Exception innerException) : base(message, innerException) { }
 
 }
+
+    [Serializable]
+    public class BlInvalidOperationException : Exception
+    {
+        public BlInvalidOperationException(string message) : base(message) { }
+        public BlInvalidOperationException(string message, Exception innerException) : base(message, innerException) { }
+    }
+

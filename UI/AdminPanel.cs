@@ -13,10 +13,10 @@ namespace UI
 
         private void btnCustomers_Click(object sender, EventArgs e)
         {
-            SalesForm salesForm = new SalesForm();
+            CustomersForm customersForm = new CustomersForm();
             this.Hide();
-            salesForm.FormClosed += Form_Closed;
-            salesForm.Show();
+            customersForm.FormClosed += Form_Closed;
+            customersForm.Show();
         }
 
         private void btnProducts_Click(object sender, EventArgs e)

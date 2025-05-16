@@ -16,7 +16,6 @@ namespace UI
             LoadData();
         }
 
- 
         private void LoadData(string filter = "")
         {
             var customers = string.IsNullOrWhiteSpace(filter)
@@ -28,28 +27,49 @@ namespace UI
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            bl.customer.Create(new Customer(
-                int.Parse(txtId.Text),
-                txtName.Text,
-                int.Parse(txtPhone.Text),
-                txtAddress.Text));
-            LoadData();
+            try
+            {
+                bl.customer.Create(new Customer(
+                    int.Parse(txtId.Text),
+                    txtName.Text,
+                    int.Parse(txtPhone.Text),
+                    txtAddress.Text));
+                LoadData();
+            }
+            catch (BLCodeExistException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            var id = (int)dataGridView1.SelectedRows[0].Cells["Id"].Value;
-            bl.customer.Update(new Customer(
-                id,
-                txtName.Text,
-                int.Parse(txtPhone.Text),
-                txtAddress.Text));
-            LoadData();
+            try
+            {
+                var id = (int)dataGridView1.SelectedRows[0].Cells["Id"].Value;
+                bl.customer.Update(new Customer(
+                    id,
+                    txtName.Text,
+                    int.Parse(txtPhone.Text),
+                    txtAddress.Text));
+                LoadData();
+            }
+            catch (BLIdNotExistException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-
             if (int.TryParse(txtId.Text, out int id))
             {
                 try
@@ -58,9 +78,13 @@ namespace UI
                     LoadData();
                     MessageBox.Show("הלקוח נמחק בהצלחה.");
                 }
+                catch (BLIdNotExistException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("אירעה שגיאה בעת המחיקה: " + ex.Message);
+                    MessageBox.Show(ex.Message);
                 }
             }
             else
@@ -72,6 +96,31 @@ namespace UI
         private void buttonFilter_Click(object sender, EventArgs e)
         {
             LoadData(txtName.Text);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int customerCode = int.TryParse(txtId.Text, out int code) ? code : -1;
+
+            try
+            {
+                var customer = bl.customer.Read(customerCode);
+                dataGridView1.DataSource = new List<BO.Customer> { customer };
+            }
+            catch (BLIdNotExistException ex)
+            {
+                MessageBox.Show(ex.Message);
+                dataGridView1.DataSource = null;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

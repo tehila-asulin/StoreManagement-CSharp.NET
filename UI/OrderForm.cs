@@ -9,7 +9,7 @@ namespace PL
 {
     public partial class OrderForm : Form
     {
-        static readonly IBl _bl = BlApi.Factory.Get();
+        static readonly IBl _bl = Factory.Get();
         private Order currentOrder = new();
         private List<BO.Product> allProducts;
         private double totalPrice = 0;
@@ -20,8 +20,6 @@ namespace PL
             InitProductComboBox();
             RefreshOrderDisplay();
         }
-        
-
 
         private void InitProductComboBox()
         {
@@ -57,13 +55,18 @@ namespace PL
                     var product = _bl.product.Read(code);
                     int quantity = int.TryParse(textBoxQuantity.Text, out int q) && q > 0 ? q : 1;
                     int customerCode = int.TryParse(textBoxCustomerCode.Text, out int custCode) ? custCode : -1;
+                  
 
                     _bl.order.AddProductToOrder(currentOrder, product.Barcode, quantity, customerCode);
                     RefreshOrderDisplay();
                 }
+                catch (BLIdNotExistException ex)
+                {
+                    MessageBox.Show( ex.Message);
+                }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("מוצר לא נמצא או שגיאה בהוספה.");
+                    MessageBox.Show(ex.Message);
                 }
             }
         }
@@ -80,9 +83,13 @@ namespace PL
                     _bl.order.AddProductToOrder(currentOrder, product.Barcode, quantity, customerCode);
                     RefreshOrderDisplay();
                 }
+                catch (BLIdNotExistException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("שגיאה בהוספת המוצר: " + ex.Message);
+                    MessageBox.Show( ex.Message);
                 }
             }
             else
@@ -97,19 +104,13 @@ namespace PL
             {
                 _bl.order.DoOrder(currentOrder);
                 MessageBox.Show("ההזמנה בוצעה בהצלחה!");
-                currentOrder = new(); 
+                currentOrder = new();
                 RefreshOrderDisplay();
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"שגיאה בהזמנה: {ex.Message}");
+                MessageBox.Show( ex.Message);
             }
-        }
-
-        private void OrderForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
-

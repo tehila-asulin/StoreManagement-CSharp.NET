@@ -18,11 +18,10 @@ namespace BlImplementation
             {
                 return _dal.Product.Create(item.ConversBoProductToDoProduct());
             }
-            catch (Exception ex)
+            catch (DO.DalIdExistException ex)
             {
-                throw new Exception();
+                throw new BLCodeExistException(ex.Message, ex);
             }
-
         }
 
         void IProduct.Delete(int id)
@@ -31,11 +30,10 @@ namespace BlImplementation
             {
                 _dal.Product.Delete(id);
             }
-            catch (Exception ex)
+            catch (DO.DalIdNotFoundException ex)
             {
-                throw new Exception();
+                throw new BLIdNotExistException(ex.Message, ex);
             }
-
         }
 
         Product? IProduct.Read(int id)
@@ -45,11 +43,10 @@ namespace BlImplementation
                 DO.Product doRes = _dal.Product.Read(id);
                 return doRes.ConversDoProductToBoProduct();
             }
-            catch (Exception e)
+            catch (DO.DalIdNotFoundException ex)
             {
-                return null;
+                throw new BLIdNotExistException(ex.Message, ex);
             }
-
         }
 
         Product? IProduct.Read(Func<Product, bool> filter)
@@ -59,26 +56,29 @@ namespace BlImplementation
                 DO.Product product = _dal.Product.Read(c => filter(c.ConversDoProductToBoProduct()));
                 return product.ConversDoProductToBoProduct();
             }
-            catch
+            catch (Exception ex)
             {
-                return null;
+                throw new Exception("Error while reading product by filter", ex);
             }
-
         }
 
         List<Product> IProduct.ReadAll(Func<Product, bool>? filter)
         {
-            if (filter == null)
-
-
-                return _dal.Product.ReadAll().Select(p => p.ConversDoProductToBoProduct()).ToList();
-            return _dal.Product.ReadAll(p => filter(p.ConversDoProductToBoProduct())).Select(p => p.ConversDoProductToBoProduct()).ToList();
-
+            try
+            {
+                if (filter == null)
+                    return _dal.Product.ReadAll().Select(p => p.ConversDoProductToBoProduct()).ToList();
+                return _dal.Product.ReadAll(p => filter(p.ConversDoProductToBoProduct())).Select(p => p.ConversDoProductToBoProduct()).ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error while reading all products", ex);
+            }
         }
 
         void IProduct.SaleIsValide(int code, bool isFavorite)
         {
-
+            // עדיין לא מומש
         }
 
         void IProduct.Update(Product item)
@@ -87,11 +87,10 @@ namespace BlImplementation
             {
                 _dal.Product.Update(item.ConversBoProductToDoProduct());
             }
-            catch (Exception ex)
+            catch (DO.DalIdNotFoundException ex)
             {
-                throw new Exception();
+                throw new BLIdNotExistException(ex.Message, ex);
             }
-
         }
     }
 }

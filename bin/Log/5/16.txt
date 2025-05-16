@@ -8,3 +8,28 @@
 16/05/2025 00:46:12	Dal.ProductImplementation.Read:	read product int id: 100
 16/05/2025 00:50:51	Dal.ProductImplementation.ReadAll:	read all products
 16/05/2025 00:50:56	Dal.ProductImplementation.Read:	read product int id: 100
+16/05/2025 02:41:31	Dal.ProductImplementation.ReadAll:	read all products
+16/05/2025 02:41:35	Dal.ProductImplementation.ReadAll:	read all products
+16/05/2025 02:41:46	Dal.ProductImplementation.Read:	read product in id: 2
+16/05/2025 02:41:46	Dal.ProductImplementation.Read:	Exception: Product with id 2 not found.
+16/05/2025 02:54:35	Dal.SaleImplementation.ReadAll:	read all sales
+16/05/2025 02:54:45	Dal.SaleImplementation.ReadAll:	read all sales
+16/05/2025 02:54:50	Dal.ProductImplementation.ReadAll:	read all products
+16/05/2025 02:54:53	Dal.SaleImplementation.ReadAll:	read all sales
+16/05/2025 02:54:56	Dal.SaleImplementation.ReadAll:	read all sales
+16/05/2025 02:56:12	Dal.CustomerImplementation.ReadAll:	read all customers
+16/05/2025 02:56:18	Dal.CustomerImplementation.Read:	read customer in id: 111
+16/05/2025 02:56:20	Dal.CustomerImplementation.ReadAll:	read all customers
+16/05/2025 03:02:03	Dal.ProductImplementation.ReadAll:	read all products
+16/05/2025 03:02:15	Dal.ProductImplementation.Read:	read product in id: 1200
+16/05/2025 03:02:15	Dal.ProductImplementation.Read:	read product in id: 1200
+16/05/2025 03:02:15	Dal.CustomerImplementation.Read:	read customer in id: -1
+16/05/2025 03:02:15	Dal.CustomerImplementation.Read:	Exception: Customer with id -1 not found.
+16/05/2025 03:14:21	Dal.ProductImplementation.ReadAll:	read all products
+16/05/2025 03:14:36	Dal.ProductImplementation.Read:	read product in id: 100
+16/05/2025 03:14:36	Dal.CustomerImplementation.Read:	read customer in id: 123
+16/05/2025 03:14:36	Dal.CustomerImplementation.Read:	Exception: Customer with id 123 not found.
+16/05/2025 03:16:00	Dal.ProductImplementation.ReadAll:	read all products
+16/05/2025 03:16:12	Dal.ProductImplementation.Read:	read product in id: 100
+16/05/2025 03:16:12	Dal.CustomerImplementation.Read:	read customer in id: 123
+16/05/2025 03:16:12	Dal.CustomerImplementation.Read:	Exception: Customer with id 123 not found.

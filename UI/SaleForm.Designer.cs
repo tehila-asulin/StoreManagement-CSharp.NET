@@ -35,6 +35,8 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
+            button1 = new Button();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -126,7 +128,7 @@
             // 
             // buttonFilter
             // 
-            buttonFilter.Location = new Point(289, 378);
+            buttonFilter.Location = new Point(262, 379);
             buttonFilter.Name = "buttonFilter";
             buttonFilter.Size = new Size(192, 29);
             buttonFilter.TabIndex = 11;
@@ -188,9 +190,31 @@
             label6.TabIndex = 17;
             label6.Text = "קוד מוצר";
             // 
+            // button1
+            // 
+            button1.Location = new Point(460, 378);
+            button1.Name = "button1";
+            button1.Size = new Size(137, 29);
+            button1.TabIndex = 18;
+            button1.Text = "הצג מבצע לפי קוד";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(601, 378);
+            button2.Name = "button2";
+            button2.Size = new Size(176, 29);
+            button2.TabIndex = 19;
+            button2.Text = "הצג את כל המבצעים";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // SalesForm
             // 
-            ClientSize = new Size(640, 420);
+            ClientSize = new Size(789, 420);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -228,6 +252,8 @@
         private Label label4;
         private Label label5;
         private Label label6;
+        private Button button1;
+        private Button button2;
     }
 
 

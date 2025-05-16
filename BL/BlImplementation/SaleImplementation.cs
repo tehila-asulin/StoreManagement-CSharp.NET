@@ -1,5 +1,6 @@
 ﻿
 using BlApi;
+using BO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ using static BO.Tools;
 
 namespace BlImplementation
 {
-    internal class SaleImplementation:ISale
+    internal class SaleImplementation : ISale
     {
         private DalApi.IDal _dal = DalApi.Factory.Get;
 
@@ -19,22 +20,21 @@ namespace BlImplementation
             {
                 return _dal.Sale.Create(item.ConversBoSaleToDoSale());
             }
-            catch
+            catch (DO.DalIdExistException ex)
             {
-                throw new Exception("");
+                throw new BLCodeExistException(ex.Message, ex);
             }
-          
         }
 
         public void Delete(int id)
         {
             try
             {
-                 _dal.Sale.Delete(id);
+                _dal.Sale.Delete(id);
             }
-            catch
+            catch (DO.DalIdNotFoundException ex)
             {
-                throw new Exception("");
+                throw new BLIdNotExistException(ex.Message, ex);
             }
         }
 
@@ -42,11 +42,11 @@ namespace BlImplementation
         {
             try
             {
-               return _dal.Sale.Read(id).ConversDoSaleToBoSale();
+                return _dal.Sale.Read(id).ConversDoSaleToBoSale();
             }
-            catch
+            catch (DO.DalIdNotFoundException ex)
             {
-                throw new Exception("");
+                throw new BLIdNotExistException(ex.Message, ex);
             }
         }
 
@@ -54,11 +54,11 @@ namespace BlImplementation
         {
             try
             {
-                return _dal.Sale.Read(s=>filter(s.ConversDoSaleToBoSale())).ConversDoSaleToBoSale();
+                return _dal.Sale.Read(s => filter(s.ConversDoSaleToBoSale())).ConversDoSaleToBoSale();
             }
-            catch
+            catch (Exception ex)
             {
-                throw new Exception("");
+                throw new Exception("Error while reading sale by filter", ex);
             }
         }
 
@@ -68,12 +68,11 @@ namespace BlImplementation
             {
                 if (filter == null)
                     return _dal.Sale.ReadAll().Select(s => s.ConversDoSaleToBoSale()).ToList();
-                else
-                    return _dal.Sale.ReadAll(s => filter(s.ConversDoSaleToBoSale())).Select(s=>s.ConversDoSaleToBoSale()).ToList();
+                return _dal.Sale.ReadAll(s => filter(s.ConversDoSaleToBoSale())).Select(s => s.ConversDoSaleToBoSale()).ToList();
             }
-            catch
+            catch (Exception ex)
             {
-                throw new Exception("");
+                throw new Exception("Error while reading all sales", ex);
             }
         }
 
@@ -81,11 +80,11 @@ namespace BlImplementation
         {
             try
             {
-                 _dal.Sale.Update(item.ConversBoSaleToDoSale());
+                _dal.Sale.Update(item.ConversBoSaleToDoSale());
             }
-            catch
+            catch (DO.DalIdNotFoundException ex)
             {
-                throw new Exception("");
+                throw new BLIdNotExistException(ex.Message, ex);
             }
         }
     }

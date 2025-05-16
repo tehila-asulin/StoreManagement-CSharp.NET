@@ -156,7 +156,7 @@
             Controls.Add(buttonFinishOrder);
             Name = "OrderForm";
             Text = "קופה - הזמנה";
-            Load += OrderForm_Load;
+           
             ((System.ComponentModel.ISupportInitialize)dataGridViewOrder).EndInit();
             ResumeLayout(false);
             PerformLayout();

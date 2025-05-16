@@ -28,6 +28,8 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
+            button1 = new Button();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -79,7 +81,7 @@
             // 
             // btnUpdate
             // 
-            btnUpdate.Location = new Point(93, 383);
+            btnUpdate.Location = new Point(93, 384);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(75, 34);
             btnUpdate.TabIndex = 6;
@@ -88,7 +90,7 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(175, 383);
+            btnDelete.Location = new Point(165, 383);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(75, 34);
             btnDelete.TabIndex = 7;
@@ -97,7 +99,7 @@
             // 
             // buttonFilter
             // 
-            buttonFilter.Location = new Point(289, 388);
+            buttonFilter.Location = new Point(246, 386);
             buttonFilter.Name = "buttonFilter";
             buttonFilter.Size = new Size(131, 29);
             buttonFilter.TabIndex = 8;
@@ -141,9 +143,31 @@
             label4.TabIndex = 12;
             label4.Text = "שם ";
             // 
+            // button1
+            // 
+            button1.Location = new Point(383, 387);
+            button1.Name = "button1";
+            button1.Size = new Size(154, 29);
+            button1.TabIndex = 13;
+            button1.Text = "הצג את כל הלקוחות";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(543, 386);
+            button2.Name = "button2";
+            button2.Size = new Size(137, 29);
+            button2.TabIndex = 14;
+            button2.Text = "הצג לקוח לפי קוד";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // CustomersForm
             // 
-            ClientSize = new Size(624, 442);
+            ClientSize = new Size(729, 442);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -169,5 +193,7 @@
         private Label label2;
         private Label label3;
         private Label label4;
+        private Button button1;
+        private Button button2;
     }
 }

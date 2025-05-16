@@ -16,7 +16,6 @@ namespace UI
             LoadData();
         }
 
-
         private void LoadData(string filter = "")
         {
             var products = string.IsNullOrWhiteSpace(filter)
@@ -26,34 +25,54 @@ namespace UI
             dataGridView1.DataSource = products.Select(p => new { p.Barcode, p.ProductName, p.Price, p.Category }).ToList();
         }
 
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            bl.product.Create(new Product
+            try
             {
-                Barcode = int.Parse(txtBarcode.Text),
-                ProductName = txtName.Text,
-                Category = (Category)Enum.Parse(typeof(Category), comboCategory.Text),
-                Price = double.Parse(txtPrice.Text),
-                QuantityStock = int.Parse(txtQuantity.Text)
-            });
-            LoadData();
+                bl.product.Create(new Product
+                {
+                    Barcode = int.Parse(txtBarcode.Text),
+                    ProductName = txtName.Text,
+                    Category = (Category)Enum.Parse(typeof(Category), comboCategory.Text),
+                    Price = double.Parse(txtPrice.Text),
+                    QuantityStock = int.Parse(txtQuantity.Text)
+                });
+                LoadData();
+            }
+            catch (BLCodeExistException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            var id = (int)dataGridView1.SelectedRows[0].Cells["Barcode"].Value;
-            bl.product.Update(new Product
+            try
             {
-                Barcode = id,
-                ProductName = txtName.Text,
-                Category = (Category)Enum.Parse(typeof(Category), comboCategory.Text),
-                Price = double.Parse(txtPrice.Text),
-                QuantityStock = int.Parse(txtQuantity.Text)
-            });
-            LoadData();
+                var id = (int)dataGridView1.SelectedRows[0].Cells["Barcode"].Value;
+                bl.product.Update(new Product
+                {
+                    Barcode = id,
+                    ProductName = txtName.Text,
+                    Category = (Category)Enum.Parse(typeof(Category), comboCategory.Text),
+                    Price = double.Parse(txtPrice.Text),
+                    QuantityStock = int.Parse(txtQuantity.Text)
+                });
+                LoadData();
+            }
+            catch (BLIdNotExistException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
-
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
@@ -65,6 +84,10 @@ namespace UI
                     LoadData();
                     MessageBox.Show("המוצר נמחק בהצלחה.");
                 }
+                catch (BLIdNotExistException ex)
+                {
+                    MessageBox.Show("לא ניתן למחוק מוצר שלא קיים: " + ex.Message);
+                }
                 catch (Exception ex)
                 {
                     MessageBox.Show("אירעה שגיאה בעת המחיקה: " + ex.Message);
@@ -74,11 +97,6 @@ namespace UI
             {
                 MessageBox.Show("יש להכניס ברקוד תקני.");
             }
-        }
-
-        private void txtPrice_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void buttonFilter_Click(object sender, EventArgs e)
@@ -95,12 +113,25 @@ namespace UI
                 var product = bl.product.Read(productCode);
                 dataGridView1.DataSource = new List<BO.Product> { product };
             }
+            catch (BLIdNotExistException ex)
+            {
+                MessageBox.Show(ex.Message);
+                dataGridView1.DataSource = null;
+            }
             catch (Exception ex)
             {
-                MessageBox.Show("המוצר לא נמצא: " + ex.Message);
-                dataGridView1.DataSource = null;
+                MessageBox.Show(ex.Message);
             }
         }
 
+        private void ProductsForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LoadData();
+        }
     }
 }

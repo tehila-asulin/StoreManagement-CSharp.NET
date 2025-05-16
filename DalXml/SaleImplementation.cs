@@ -1,14 +1,10 @@
 ﻿using DalApi;
-using DalXml;
 using DO;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
 using System.Xml.Serialization;
 using Tools;
 
@@ -20,91 +16,163 @@ namespace Dal
         XmlSerializer serializer = new XmlSerializer(typeof(List<Sale>));
         List<Sale> list;
 
-        public int Create(Sale item)    
+        public int Create(Sale item)
         {
-            LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"insert sale in id:{item.BarcodeSale}");
-            int nextId = 0;
-            using (StreamReader sr = new StreamReader(filePath))
+            try
             {
-                 nextId = Config.CodeSale;
-                list = serializer.Deserialize(sr) as List<Sale>;
+                LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName,
+                                      MethodBase.GetCurrentMethod().Name,
+                                      $"insert sale in id:{item.BarcodeSale}");
 
-                
-                Sale newSale = new Sale(
-                    nextId,
-                    item.ProductId,
-                    item.RequiredItems,
-                    item.TotalPrice,
-                    item.IsCustomersClub,
-                    item.BeginingSale,
-                    item.EndSale
-                );
+                int nextId;
+                using (StreamReader sr = new StreamReader(filePath))
+                {
+                    list = serializer.Deserialize(sr) as List<Sale>;
+                    if (list.Any(s => s.BarcodeSale == item.BarcodeSale))
+                        throw new DalIdExistException($"Sale with id {item.BarcodeSale} already exists.");
 
-                list.Add(newSale);
+                    nextId = item.BarcodeSale; // or generate new ID logic
+                    list.Add(item);
+                }
+                using (StreamWriter sw = new StreamWriter(filePath))
+                {
+                    serializer.Serialize(sw, list);
+                }
+                return nextId;
             }
-
-            using (StreamWriter sw = new StreamWriter(filePath))
+            catch (Exception ex)
             {
-                serializer.Serialize(sw, list);
-            }
-
-            return nextId;
-        }
-
-
-        public void Delete(int id)
-        {
-            LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"delete sale in id:{id}");
-            using (StreamReader sr = new StreamReader(filePath))
-            {
-                list = serializer.Deserialize(sr) as List<Sale>;
-                list.Remove(list.FirstOrDefault(sale => sale.BarcodeSale == id));
-            }
-            using (StreamWriter sw = new StreamWriter(filePath))
-            {
-                serializer.Serialize(sw, list);
+                LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName,
+                                      MethodBase.GetCurrentMethod().Name,
+                                      $"Exception: {ex.Message}");
+                throw;
             }
         }
 
-        public Sale Read(int id)
+        public Sale? Read(int id)
         {
-            LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"read sale int id: {id}");
-            using (StreamReader sr = new StreamReader(filePath))
+            try
             {
-                list = serializer.Deserialize(sr) as List<Sale>;
+                LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName,
+                                      MethodBase.GetCurrentMethod().Name,
+                                      $"read sale in id: {id}");
+
+                using (StreamReader sr = new StreamReader(filePath))
+                {
+                    list = serializer.Deserialize(sr) as List<Sale>;
+                }
+                var sale = list.FirstOrDefault(s => s.BarcodeSale == id);
+                if (sale == null)
+                    throw new DalIdNotFoundException($"Sale with id {id} not found.");
+                return sale;
             }
-            return list.FirstOrDefault(sale => sale.BarcodeSale == id);
+            catch (Exception ex)
+            {
+                LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName,
+                                      MethodBase.GetCurrentMethod().Name,
+                                      $"Exception: {ex.Message}");
+                throw;
+            }
         }
 
         public Sale? Read(Func<Sale, bool> filter)
         {
-            LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"read sale");
-            using (StreamReader sr = new StreamReader(filePath))
+            try
             {
-                list = serializer.Deserialize(sr) as List<Sale>;
+                LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName,
+                                      MethodBase.GetCurrentMethod().Name,
+                                      $"read sale with filter");
+
+                using (StreamReader sr = new StreamReader(filePath))
+                {
+                    list = serializer.Deserialize(sr) as List<Sale>;
+                }
+                return list.FirstOrDefault(filter);
             }
-            return list.FirstOrDefault(filter);
+            catch (Exception ex)
+            {
+                LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName,
+                                      MethodBase.GetCurrentMethod().Name,
+                                      $"Exception: {ex.Message}");
+                throw;
+            }
         }
 
         public List<Sale> ReadAll(Func<Sale, bool>? filter = null)
         {
-            LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"read all sales");
-            using (StreamReader sr = new StreamReader(filePath))
+            try
             {
-                list = serializer.Deserialize(sr) as List<Sale>;
+                LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName,
+                                      MethodBase.GetCurrentMethod().Name,
+                                      $"read all sales");
+
+                using (StreamReader sr = new StreamReader(filePath))
+                {
+                    list = serializer.Deserialize(sr) as List<Sale>;
+                }
+                if (filter != null)
+                    return list.Where(filter).ToList();
+                return list;
             }
-            if (filter != null)
-                return list?.Where(filter!).ToList() ?? throw new Exception();
-            return list;
+            catch (Exception ex)
+            {
+                LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName,
+                                      MethodBase.GetCurrentMethod().Name,
+                                      $"Exception: {ex.Message}");
+                throw;
+            }
+        }
+        public void Delete(int id)
+        {
+            try
+            {
+                LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName,
+                                      MethodBase.GetCurrentMethod().Name,
+                                      $"delete sale with id: {id}");
+
+                using (StreamReader sr = new StreamReader(filePath))
+                {
+                    list = serializer.Deserialize(sr) as List<Sale>;
+                }
+
+                var sale = list.FirstOrDefault(s => s.BarcodeSale == id);
+                if (sale == null)
+                    throw new DalIdNotFoundException($"Sale with id {id} not found.");
+
+                list.Remove(sale);
+
+                using (StreamWriter sw = new StreamWriter(filePath))
+                {
+                    serializer.Serialize(sw, list);
+                }
+            }
+            catch (Exception ex)
+            {
+                LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName,
+                                      MethodBase.GetCurrentMethod().Name,
+                                      $"Exception: {ex.Message}");
+                throw;
+            }
         }
 
         public void Update(Sale item)
         {
-            LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"update sale in id:{item.BarcodeSale}");
-            Delete(item.BarcodeSale);
-            Create(item);
+            try
+            {
+                LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName,
+                                      MethodBase.GetCurrentMethod().Name,
+                                      $"update sale in id:{item.BarcodeSale}");
+                Delete(item.BarcodeSale);
+                Create(item);
+            }
+            catch (Exception ex)
+            {
+                LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName,
+                                      MethodBase.GetCurrentMethod().Name,
+                                      $"Exception: {ex.Message}");
+                throw;
+            }
         }
     }
+
 }
-
-

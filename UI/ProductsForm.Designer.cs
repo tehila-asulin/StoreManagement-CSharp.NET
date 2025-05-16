@@ -33,6 +33,7 @@ namespace UI
             label5 = new Label();
             buttonFilter = new Button();
             btProductById = new Button();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -73,7 +74,6 @@ namespace UI
             txtPrice.Name = "txtPrice";
             txtPrice.Size = new Size(100, 27);
             txtPrice.TabIndex = 4;
-            txtPrice.TextChanged += txtPrice_TextChanged;
             // 
             // txtQuantity
             // 
@@ -174,9 +174,20 @@ namespace UI
             btProductById.UseVisualStyleBackColor = true;
             btProductById.Click += btProductById_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(416, 343);
+            button1.Name = "button1";
+            button1.Size = new Size(185, 29);
+            button1.TabIndex = 16;
+            button1.Text = "הצג את כל המוצרים";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // ProductsForm
             // 
-            ClientSize = new Size(535, 378);
+            ClientSize = new Size(644, 378);
+            Controls.Add(button1);
             Controls.Add(btProductById);
             Controls.Add(buttonFilter);
             Controls.Add(label5);
@@ -195,6 +206,7 @@ namespace UI
             Controls.Add(btnDelete);
             Name = "ProductsForm";
             Text = "ניהול מוצרים";
+            Load += ProductsForm_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -207,5 +219,6 @@ namespace UI
         private Label label5;
         private Button buttonFilter;
         private Button btProductById;
+        private Button button1;
     }
 }

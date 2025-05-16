@@ -20,12 +20,7 @@ internal class ProductImplementation:Iproduct
     public Product? Read(int barcode)
     {
         LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"read product int id: {barcode}");
-        //foreach (Product product in DataSource.products)
-        //{
-        //    if (product.Barcode == barcode)
-        //        return product;
-        //}
-        //throw new DalIdNotFoundException("this barcode is not exist");
+        
         Product product;
         product = DataSource.products.FirstOrDefault(x => x.Barcode == barcode);
         if (product == null)
