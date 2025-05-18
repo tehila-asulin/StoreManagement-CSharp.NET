@@ -1,6 +1,4 @@
-﻿
-
-using DO;
+﻿using DO;
 
 namespace Dal;
 
@@ -30,7 +28,7 @@ internal static class DataSource
             get
             {
 
-                return CodeSale += 10;
+                return CodeSale += 1;
             }
         }
 

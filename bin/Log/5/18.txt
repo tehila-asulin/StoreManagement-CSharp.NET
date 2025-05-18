@@ -38,3 +38,309 @@
 18/05/2025 02:37:36	Dal.CustomerImplementation.Read:	Exception: Customer with id -1 not found.
 18/05/2025 02:37:36	Dal.ProductImplementation.Read:	read product in id: 1200
 18/05/2025 02:37:36	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 20:53:10	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 21:07:55	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 21:10:11	Dal.ProductImplementation.Create:	insert product in id:1700
+18/05/2025 21:14:48	Dal.ProductImplementation.Create:	insert product in id:0
+18/05/2025 21:14:48	Dal.ProductImplementation.Create:	insert product in id:0
+18/05/2025 21:14:48	Dal.ProductImplementation.Create:	Exception: Product with id 0 already exists.
+18/05/2025 21:28:53	Dal.ProductImplementation.Create:	insert product in id:100
+18/05/2025 21:28:53	Dal.ProductImplementation.Create:	insert product in id:200
+18/05/2025 21:28:54	Dal.ProductImplementation.Create:	insert product in id:300
+18/05/2025 21:28:54	Dal.ProductImplementation.Create:	insert product in id:400
+18/05/2025 21:28:54	Dal.ProductImplementation.Create:	insert product in id:500
+18/05/2025 21:28:54	Dal.ProductImplementation.Create:	insert product in id:600
+18/05/2025 21:28:55	Dal.ProductImplementation.Create:	insert product in id:700
+18/05/2025 21:28:55	Dal.ProductImplementation.Create:	insert product in id:800
+18/05/2025 21:28:55	Dal.ProductImplementation.Create:	insert product in id:900
+18/05/2025 21:28:55	Dal.ProductImplementation.Create:	insert product in id:1000
+18/05/2025 21:28:56	Dal.ProductImplementation.Create:	insert product in id:1100
+18/05/2025 21:28:56	Dal.ProductImplementation.Create:	insert product in id:1200
+18/05/2025 21:28:56	Dal.ProductImplementation.Create:	insert product in id:1300
+18/05/2025 21:28:57	Dal.ProductImplementation.Create:	insert product in id:1400
+18/05/2025 21:28:57	Dal.ProductImplementation.Create:	insert product in id:1500
+18/05/2025 21:28:59	Dal.CustomerImplementation.Create:	insert customer in id:111
+18/05/2025 21:28:59	Dal.CustomerImplementation.Create:	insert customer in id:222
+18/05/2025 21:28:59	Dal.CustomerImplementation.Create:	insert customer in id:333
+18/05/2025 21:28:59	Dal.SaleImplementation.Create:	insert sale in id:1
+18/05/2025 21:28:59	Dal.SaleImplementation.Create:	insert sale in id:2
+18/05/2025 21:28:59	Dal.SaleImplementation.Create:	insert sale in id:3
+18/05/2025 21:38:18	Dal.ProductImplementation.Create:	insert product in id:100
+18/05/2025 21:38:18	Dal.ProductImplementation.Create:	insert product in id:200
+18/05/2025 21:38:18	Dal.ProductImplementation.Create:	insert product in id:300
+18/05/2025 21:38:18	Dal.ProductImplementation.Create:	insert product in id:400
+18/05/2025 21:38:18	Dal.ProductImplementation.Create:	insert product in id:500
+18/05/2025 21:38:18	Dal.ProductImplementation.Create:	insert product in id:600
+18/05/2025 21:38:18	Dal.ProductImplementation.Create:	insert product in id:700
+18/05/2025 21:38:18	Dal.ProductImplementation.Create:	insert product in id:800
+18/05/2025 21:38:18	Dal.ProductImplementation.Create:	insert product in id:900
+18/05/2025 21:38:18	Dal.ProductImplementation.Create:	insert product in id:1000
+18/05/2025 21:38:18	Dal.ProductImplementation.Create:	insert product in id:1100
+18/05/2025 21:38:18	Dal.ProductImplementation.Create:	insert product in id:1200
+18/05/2025 21:38:18	Dal.ProductImplementation.Create:	insert product in id:1300
+18/05/2025 21:38:18	Dal.ProductImplementation.Create:	insert product in id:1400
+18/05/2025 21:38:18	Dal.ProductImplementation.Create:	insert product in id:1500
+18/05/2025 21:38:18	Dal.CustomerImplementation.Create:	insert customer in id:111
+18/05/2025 21:38:18	Dal.CustomerImplementation.Create:	insert customer in id:222
+18/05/2025 21:38:18	Dal.CustomerImplementation.Create:	insert customer in id:333
+18/05/2025 21:38:18	Dal.SaleImplementation.Create:	insert sale in id:1
+18/05/2025 21:38:18	Dal.SaleImplementation.Create:	insert sale in id:2
+18/05/2025 21:38:18	Dal.SaleImplementation.Create:	insert sale in id:3
+18/05/2025 21:40:31	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 21:42:07	Dal.ProductImplementation.Create:	insert product in id:1700
+18/05/2025 21:42:24	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 21:42:49	Dal.ProductImplementation.Create:	insert product in id:2000
+18/05/2025 21:42:49	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 21:43:57	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 21:44:27	Dal.ProductImplementation.Create:	insert product in id:2100
+18/05/2025 21:44:32	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 21:46:19	Dal.ProductImplementation.Create:	insert product in id:100
+18/05/2025 21:46:19	Dal.ProductImplementation.Create:	insert product in id:200
+18/05/2025 21:46:19	Dal.ProductImplementation.Create:	insert product in id:300
+18/05/2025 21:46:19	Dal.ProductImplementation.Create:	insert product in id:400
+18/05/2025 21:46:19	Dal.ProductImplementation.Create:	insert product in id:500
+18/05/2025 21:46:19	Dal.ProductImplementation.Create:	insert product in id:600
+18/05/2025 21:46:19	Dal.ProductImplementation.Create:	insert product in id:700
+18/05/2025 21:46:19	Dal.ProductImplementation.Create:	insert product in id:800
+18/05/2025 21:46:19	Dal.ProductImplementation.Create:	insert product in id:900
+18/05/2025 21:46:19	Dal.ProductImplementation.Create:	insert product in id:1000
+18/05/2025 21:46:19	Dal.ProductImplementation.Create:	insert product in id:1100
+18/05/2025 21:46:19	Dal.ProductImplementation.Create:	insert product in id:1200
+18/05/2025 21:46:19	Dal.ProductImplementation.Create:	insert product in id:1300
+18/05/2025 21:46:19	Dal.ProductImplementation.Create:	insert product in id:1400
+18/05/2025 21:46:19	Dal.ProductImplementation.Create:	insert product in id:1500
+18/05/2025 21:46:19	Dal.CustomerImplementation.Create:	insert customer in id:111
+18/05/2025 21:46:19	Dal.CustomerImplementation.Create:	insert customer in id:222
+18/05/2025 21:46:19	Dal.CustomerImplementation.Create:	insert customer in id:333
+18/05/2025 21:47:18	Dal.SaleImplementation.Create:	insert sale in id:2
+18/05/2025 21:48:43	Dal.ProductImplementation.Create:	insert product in id:100
+18/05/2025 21:48:43	Dal.ProductImplementation.Create:	insert product in id:200
+18/05/2025 21:48:43	Dal.ProductImplementation.Create:	insert product in id:300
+18/05/2025 21:48:43	Dal.ProductImplementation.Create:	insert product in id:400
+18/05/2025 21:48:43	Dal.ProductImplementation.Create:	insert product in id:500
+18/05/2025 21:48:43	Dal.ProductImplementation.Create:	insert product in id:600
+18/05/2025 21:48:43	Dal.ProductImplementation.Create:	insert product in id:700
+18/05/2025 21:48:43	Dal.ProductImplementation.Create:	insert product in id:800
+18/05/2025 21:48:43	Dal.ProductImplementation.Create:	insert product in id:900
+18/05/2025 21:48:43	Dal.ProductImplementation.Create:	insert product in id:1000
+18/05/2025 21:48:43	Dal.ProductImplementation.Create:	insert product in id:1100
+18/05/2025 21:48:43	Dal.ProductImplementation.Create:	insert product in id:1200
+18/05/2025 21:48:43	Dal.ProductImplementation.Create:	insert product in id:1300
+18/05/2025 21:48:43	Dal.ProductImplementation.Create:	insert product in id:1400
+18/05/2025 21:48:43	Dal.ProductImplementation.Create:	insert product in id:1500
+18/05/2025 21:48:43	Dal.CustomerImplementation.Create:	insert customer in id:111
+18/05/2025 21:48:43	Dal.CustomerImplementation.Create:	insert customer in id:222
+18/05/2025 21:48:43	Dal.CustomerImplementation.Create:	insert customer in id:333
+18/05/2025 21:50:25	Dal.ProductImplementation.Create:	insert product in id:0
+18/05/2025 21:50:25	Dal.ProductImplementation.Create:	insert product in id:100
+18/05/2025 21:50:25	Dal.ProductImplementation.Create:	insert product in id:200
+18/05/2025 21:50:25	Dal.ProductImplementation.Create:	insert product in id:300
+18/05/2025 21:50:25	Dal.ProductImplementation.Create:	insert product in id:400
+18/05/2025 21:50:25	Dal.ProductImplementation.Create:	insert product in id:500
+18/05/2025 21:50:25	Dal.ProductImplementation.Create:	insert product in id:600
+18/05/2025 21:50:25	Dal.ProductImplementation.Create:	insert product in id:700
+18/05/2025 21:50:25	Dal.ProductImplementation.Create:	insert product in id:800
+18/05/2025 21:50:25	Dal.ProductImplementation.Create:	insert product in id:900
+18/05/2025 21:50:26	Dal.ProductImplementation.Create:	insert product in id:1000
+18/05/2025 21:50:26	Dal.ProductImplementation.Create:	insert product in id:1100
+18/05/2025 21:50:26	Dal.ProductImplementation.Create:	insert product in id:1200
+18/05/2025 21:50:26	Dal.ProductImplementation.Create:	insert product in id:1300
+18/05/2025 21:50:26	Dal.ProductImplementation.Create:	insert product in id:1400
+18/05/2025 21:50:26	Dal.CustomerImplementation.Create:	insert customer in id:111
+18/05/2025 21:50:26	Dal.CustomerImplementation.Create:	insert customer in id:222
+18/05/2025 21:50:26	Dal.CustomerImplementation.Create:	insert customer in id:333
+18/05/2025 21:50:26	Dal.SaleImplementation.Create:	insert sale in id:0
+18/05/2025 21:50:26	Dal.SaleImplementation.Create:	insert sale in id:1
+18/05/2025 21:50:26	Dal.SaleImplementation.Create:	insert sale in id:2
+18/05/2025 21:51:03	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 21:51:35	Dal.ProductImplementation.Create:	insert product in id:1500
+18/05/2025 21:51:35	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 21:51:47	Dal.ProductImplementation.Create:	insert product in id:1600
+18/05/2025 21:51:48	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 21:51:59	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 21:52:22	Dal.CustomerImplementation.ReadAll:	read all customers
+18/05/2025 21:52:26	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 21:52:39	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 21:52:44	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 21:53:23	Dal.SaleImplementation.Create:	insert sale in id:3
+18/05/2025 21:53:23	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 21:55:03	Dal.ProductImplementation.Create:	insert product in id:100
+18/05/2025 21:55:03	Dal.ProductImplementation.Create:	insert product in id:200
+18/05/2025 21:55:03	Dal.ProductImplementation.Create:	insert product in id:300
+18/05/2025 21:55:03	Dal.ProductImplementation.Create:	insert product in id:400
+18/05/2025 21:55:03	Dal.ProductImplementation.Create:	insert product in id:500
+18/05/2025 21:55:03	Dal.ProductImplementation.Create:	insert product in id:600
+18/05/2025 21:55:03	Dal.ProductImplementation.Create:	insert product in id:700
+18/05/2025 21:55:03	Dal.ProductImplementation.Create:	insert product in id:800
+18/05/2025 21:55:03	Dal.ProductImplementation.Create:	insert product in id:900
+18/05/2025 21:55:03	Dal.ProductImplementation.Create:	insert product in id:1000
+18/05/2025 21:55:03	Dal.ProductImplementation.Create:	insert product in id:1100
+18/05/2025 21:55:03	Dal.ProductImplementation.Create:	insert product in id:1200
+18/05/2025 21:55:03	Dal.ProductImplementation.Create:	insert product in id:1300
+18/05/2025 21:55:03	Dal.ProductImplementation.Create:	insert product in id:1400
+18/05/2025 21:55:03	Dal.ProductImplementation.Create:	insert product in id:1500
+18/05/2025 21:55:04	Dal.CustomerImplementation.Create:	insert customer in id:111
+18/05/2025 21:55:04	Dal.CustomerImplementation.Create:	insert customer in id:222
+18/05/2025 21:55:04	Dal.CustomerImplementation.Create:	insert customer in id:333
+18/05/2025 21:55:04	Dal.SaleImplementation.Create:	insert sale in id:1
+18/05/2025 21:55:04	Dal.SaleImplementation.Create:	insert sale in id:2
+18/05/2025 21:55:04	Dal.SaleImplementation.Create:	insert sale in id:3
+18/05/2025 21:55:28	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 21:55:43	Dal.ProductImplementation.Create:	insert product in id:1600
+18/05/2025 21:55:43	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 21:55:47	Dal.ProductImplementation.Create:	insert product in id:1700
+18/05/2025 21:55:47	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 21:55:58	Dal.CustomerImplementation.ReadAll:	read all customers
+18/05/2025 21:56:01	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 21:56:32	Dal.SaleImplementation.Create:	insert sale in id:4
+18/05/2025 21:56:32	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 21:56:44	Dal.SaleImplementation.Create:	insert sale in id:5
+18/05/2025 21:56:44	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 21:58:32	Dal.SaleImplementation.Update:	update sale in id:5
+18/05/2025 21:58:32	Dal.SaleImplementation.Delete:	delete sale with id: 5
+18/05/2025 21:58:32	Dal.SaleImplementation.Create:	insert sale in id:6
+18/05/2025 21:58:32	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 22:01:30	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:01:38	Dal.ProductImplementation.Delete:	delete product in id:1700
+18/05/2025 22:01:38	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:01:44	Dal.CustomerImplementation.ReadAll:	read all customers
+18/05/2025 22:01:48	Dal.CustomerImplementation.Delete:	delete customer in id:333
+18/05/2025 22:01:48	Dal.CustomerImplementation.ReadAll:	read all customers
+18/05/2025 22:01:55	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:01:57	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 22:05:27	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:05:32	Dal.ProductImplementation.Delete:	delete product in id:1600
+18/05/2025 22:05:32	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:05:42	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 22:05:50	Dal.ProductImplementation.Delete:	delete product in id:6
+18/05/2025 22:05:50	Dal.ProductImplementation.Delete:	Exception: Product with id 6 not found.
+18/05/2025 22:06:23	Dal.ProductImplementation.Delete:	delete product in id:6
+18/05/2025 22:06:23	Dal.ProductImplementation.Delete:	Exception: Product with id 6 not found.
+18/05/2025 22:06:45	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 22:06:49	Dal.SaleImplementation.Delete:	delete sale with id: 6
+18/05/2025 22:06:49	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 22:08:00	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 22:08:22	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 22:08:43	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 22:09:07	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 22:09:08	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 22:09:08	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 22:09:09	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 22:10:41	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:10:55	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 22:12:22	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:12:27	Dal.ProductImplementation.Read:	read product in id: -1
+18/05/2025 22:12:27	Dal.ProductImplementation.Read:	Exception: Product with id -1 not found.
+18/05/2025 22:12:34	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:12:42	Dal.CustomerImplementation.ReadAll:	read all customers
+18/05/2025 22:13:33	Dal.CustomerImplementation.Create:	insert customer in id:333
+18/05/2025 22:13:33	Dal.CustomerImplementation.ReadAll:	read all customers
+18/05/2025 22:13:58	Dal.CustomerImplementation.ReadAll:	read all customers
+18/05/2025 22:14:37	Dal.CustomerImplementation.ReadAll:	read all customers
+18/05/2025 22:15:15	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:15:59	Dal.ProductImplementation.Create:	insert product in id:1800
+18/05/2025 22:15:59	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:16:26	Dal.ProductImplementation.Create:	insert product in id:1900
+18/05/2025 22:16:26	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:16:39	Dal.ProductImplementation.Create:	insert product in id:2000
+18/05/2025 22:16:39	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:16:51	Dal.ProductImplementation.Create:	insert product in id:2100
+18/05/2025 22:16:51	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:16:54	Dal.ProductImplementation.Create:	insert product in id:2200
+18/05/2025 22:16:54	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:17:17	Dal.ProductImplementation.Delete:	delete product in id:2200
+18/05/2025 22:17:17	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:17:24	Dal.ProductImplementation.Delete:	delete product in id:2100
+18/05/2025 22:17:24	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:17:33	Dal.ProductImplementation.Delete:	delete product in id:2000
+18/05/2025 22:17:34	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:17:40	Dal.ProductImplementation.Delete:	delete product in id:1900
+18/05/2025 22:17:40	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:17:48	Dal.ProductImplementation.Delete:	delete product in id:1800
+18/05/2025 22:17:48	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:17:57	Dal.ProductImplementation.Create:	insert product in id:2300
+18/05/2025 22:17:57	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:18:33	Dal.ProductImplementation.Delete:	delete product in id:2300
+18/05/2025 22:18:33	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:20:45	Dal.ProductImplementation.Create:	insert product in id:100
+18/05/2025 22:20:45	Dal.ProductImplementation.Create:	insert product in id:200
+18/05/2025 22:20:45	Dal.ProductImplementation.Create:	insert product in id:300
+18/05/2025 22:20:45	Dal.ProductImplementation.Create:	insert product in id:400
+18/05/2025 22:20:45	Dal.ProductImplementation.Create:	insert product in id:500
+18/05/2025 22:20:45	Dal.ProductImplementation.Create:	insert product in id:600
+18/05/2025 22:20:45	Dal.ProductImplementation.Create:	insert product in id:700
+18/05/2025 22:20:45	Dal.ProductImplementation.Create:	insert product in id:800
+18/05/2025 22:20:45	Dal.ProductImplementation.Create:	insert product in id:900
+18/05/2025 22:20:45	Dal.ProductImplementation.Create:	insert product in id:1000
+18/05/2025 22:20:45	Dal.ProductImplementation.Create:	insert product in id:1100
+18/05/2025 22:20:45	Dal.ProductImplementation.Create:	insert product in id:1200
+18/05/2025 22:20:45	Dal.ProductImplementation.Create:	insert product in id:1300
+18/05/2025 22:20:45	Dal.ProductImplementation.Create:	insert product in id:1400
+18/05/2025 22:20:45	Dal.ProductImplementation.Create:	insert product in id:1500
+18/05/2025 22:20:46	Dal.CustomerImplementation.Create:	insert customer in id:111
+18/05/2025 22:20:46	Dal.CustomerImplementation.Create:	insert customer in id:222
+18/05/2025 22:20:46	Dal.CustomerImplementation.Create:	insert customer in id:333
+18/05/2025 22:20:46	Dal.SaleImplementation.Create:	insert sale in id:1
+18/05/2025 22:20:46	Dal.SaleImplementation.Create:	insert sale in id:2
+18/05/2025 22:20:46	Dal.SaleImplementation.Create:	insert sale in id:3
+18/05/2025 22:21:52	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:22:18	Dal.ProductImplementation.Create:	insert product in id:1600
+18/05/2025 22:22:18	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:22:27	Dal.ProductImplementation.Create:	insert product in id:1700
+18/05/2025 22:22:27	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:22:42	Dal.ProductImplementation.Delete:	delete product in id:1700
+18/05/2025 22:22:42	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:22:49	Dal.ProductImplementation.Create:	insert product in id:1800
+18/05/2025 22:22:49	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:22:58	Dal.ProductImplementation.Delete:	delete product in id:1800
+18/05/2025 22:22:58	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:23:09	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:23:16	Dal.ProductImplementation.Read:	read product in id: 1600
+18/05/2025 22:23:33	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:24:16	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 22:24:38	Dal.SaleImplementation.Create:	insert sale in id:4
+18/05/2025 22:24:38	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 22:24:45	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:24:51	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 22:25:10	Dal.CustomerImplementation.Read:	read customer in id: 333
+18/05/2025 22:25:10	Dal.ProductImplementation.Read:	read product in id: 1600
+18/05/2025 22:25:10	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 22:25:43	Dal.ProductImplementation.Read:	read product in id: 1600
+18/05/2025 22:25:43	Dal.ProductImplementation.Update:	update product in id: 1600
+18/05/2025 22:29:10	Dal.ProductImplementation.Create:	insert product in id:100
+18/05/2025 22:29:10	Dal.ProductImplementation.Create:	insert product in id:200
+18/05/2025 22:29:10	Dal.ProductImplementation.Create:	insert product in id:300
+18/05/2025 22:29:10	Dal.ProductImplementation.Create:	insert product in id:400
+18/05/2025 22:29:10	Dal.ProductImplementation.Create:	insert product in id:500
+18/05/2025 22:29:10	Dal.ProductImplementation.Create:	insert product in id:600
+18/05/2025 22:29:10	Dal.ProductImplementation.Create:	insert product in id:700
+18/05/2025 22:29:10	Dal.ProductImplementation.Create:	insert product in id:800
+18/05/2025 22:29:10	Dal.ProductImplementation.Create:	insert product in id:900
+18/05/2025 22:29:10	Dal.ProductImplementation.Create:	insert product in id:1000
+18/05/2025 22:29:10	Dal.ProductImplementation.Create:	insert product in id:1100
+18/05/2025 22:29:10	Dal.ProductImplementation.Create:	insert product in id:1200
+18/05/2025 22:29:10	Dal.ProductImplementation.Create:	insert product in id:1300
+18/05/2025 22:29:10	Dal.ProductImplementation.Create:	insert product in id:1400
+18/05/2025 22:29:10	Dal.ProductImplementation.Create:	Exception: The process cannot access the file 'C:\Users\This User\Documents\פרויקט מושלם ללא עיצוב\DoteNet2025_7107_6539\xml\data-config.xml' because it is being used by another process.
+18/05/2025 22:29:59	Dal.ProductImplementation.Create:	insert product in id:100
+18/05/2025 22:29:59	Dal.ProductImplementation.Create:	insert product in id:200
+18/05/2025 22:29:59	Dal.ProductImplementation.Create:	insert product in id:300
+18/05/2025 22:29:59	Dal.ProductImplementation.Create:	insert product in id:400
+18/05/2025 22:29:59	Dal.ProductImplementation.Create:	insert product in id:500
+18/05/2025 22:29:59	Dal.ProductImplementation.Create:	insert product in id:600
+18/05/2025 22:29:59	Dal.ProductImplementation.Create:	insert product in id:700
+18/05/2025 22:29:59	Dal.ProductImplementation.Create:	insert product in id:800
+18/05/2025 22:29:59	Dal.ProductImplementation.Create:	insert product in id:900
+18/05/2025 22:29:59	Dal.ProductImplementation.Create:	insert product in id:1000
+18/05/2025 22:29:59	Dal.ProductImplementation.Create:	insert product in id:1100
+18/05/2025 22:29:59	Dal.ProductImplementation.Create:	insert product in id:1200
+18/05/2025 22:29:59	Dal.ProductImplementation.Create:	insert product in id:1300
+18/05/2025 22:29:59	Dal.ProductImplementation.Create:	insert product in id:1400
+18/05/2025 22:29:59	Dal.ProductImplementation.Create:	insert product in id:1500
+18/05/2025 22:29:59	Dal.CustomerImplementation.Create:	insert customer in id:111
+18/05/2025 22:29:59	Dal.CustomerImplementation.Create:	insert customer in id:222
+18/05/2025 22:29:59	Dal.CustomerImplementation.Create:	insert customer in id:333
+18/05/2025 22:29:59	Dal.SaleImplementation.Create:	insert sale in id:1
+18/05/2025 22:29:59	Dal.SaleImplementation.Create:	insert sale in id:2
+18/05/2025 22:29:59	Dal.SaleImplementation.Create:	insert sale in id:3
+18/05/2025 22:30:37	Dal.ProductImplementation.ReadAll:	read all products

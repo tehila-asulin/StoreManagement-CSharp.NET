@@ -1,4 +1,5 @@
 ﻿using DalApi;
+using DalXml;
 using DO;
 using System;
 using System.Collections.Generic;
@@ -18,21 +19,23 @@ namespace Dal
 
         public int Create(Sale item)
         {
+           
             try
             {
+                int nextId = Config.CodeSale;
                 LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName,
                                       MethodBase.GetCurrentMethod().Name,
-                                      $"insert sale in id:{item.BarcodeSale}");
+                                      $"insert sale in id:{nextId}");
 
-                int nextId;
+               
                 using (StreamReader sr = new StreamReader(filePath))
                 {
                     list = serializer.Deserialize(sr) as List<Sale>;
-                    if (list.Any(s => s.BarcodeSale == item.BarcodeSale))
-                        throw new DalIdExistException($"Sale with id {item.BarcodeSale} already exists.");
+                    if (list.Any(s => s.BarcodeSale == nextId))
+                        throw new DalIdExistException($"Sale with id {nextId} already exists.");
 
-                    nextId = item.BarcodeSale; // or generate new ID logic
-                    list.Add(item);
+                    Sale sale = new Sale(nextId,item.ProductId,item.RequiredItems,item.TotalPrice,item.IsCustomersClub,item.BeginingSale,item.EndSale);
+                    list.Add(sale);
                 }
                 using (StreamWriter sw = new StreamWriter(filePath))
                 {

@@ -19,12 +19,6 @@ internal class SaleImplementation:ISale
     public Sale? Read(int barcodesale)
     {
         LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, $"read sale int id: {barcodesale}");
-        //foreach (Sale sale in DataSource.sales)
-        //{
-        //    if (sale.BarcodeSale == barcodesale)
-        //        return sale;
-        //}
-        //throw new DalIdNotFoundException("this barcode is not exist");
 
         Sale sale;
         sale = DataSource.sales.FirstOrDefault(x => x.BarcodeSale == barcodesale);

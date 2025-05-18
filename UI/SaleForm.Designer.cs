@@ -132,7 +132,7 @@
             buttonFilter.Name = "buttonFilter";
             buttonFilter.Size = new Size(192, 29);
             buttonFilter.TabIndex = 11;
-            buttonFilter.Text = "סנן לפי תאריך סיום מבצע";
+            buttonFilter.Text = "סנן רק מבצעים שבתוקף";
             buttonFilter.UseVisualStyleBackColor = true;
             buttonFilter.Click += buttonFilter_Click;
             // 

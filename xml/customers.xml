@@ -2,19 +2,20 @@
 <ArrayOfCustomer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Customer>
     <Id>111</Id>
-    <Name>shani</Name>
+    <Name>שני</Name>
     <Phone>123456</Phone>
-    <Address>jerusalem</Address>
+    <Address>ירושלים</Address>
   </Customer>
   <Customer>
     <Id>222</Id>
-    <Name>teila</Name>
+    <Name>תהילה</Name>
     <Phone>123456</Phone>
-    <Address>tel aviv</Address>
+    <Address>תל אביב</Address>
   </Customer>
   <Customer>
     <Id>333</Id>
-    <Name>miri</Name>
+    <Name>מירי</Name>
     <Phone>123456</Phone>
+    <Address>חיפה</Address>
   </Customer>
 </ArrayOfCustomer>

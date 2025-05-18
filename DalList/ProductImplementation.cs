@@ -1,5 +1,4 @@
-﻿
-using DalApi;
+﻿using DalApi;
 using DO;
 using System.ComponentModel.Design;
 using System.Reflection;

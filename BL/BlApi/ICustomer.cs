@@ -9,11 +9,11 @@ namespace BlApi
 {
     public interface ICustomer
     {
-        int Create(Customer item); //Creates new entity object in DAL
-        Customer? Read(int id); //Reads entity object by its ID 
+        int Create(Customer item); 
+        Customer? Read(int id);
         Customer? Read(Func<Customer, bool> filter);
-        List<Customer> ReadAll(Func<Customer, bool>? filter = null); //stage 1 only, Reads all entity objects
-        void Update(Customer item); //Updates entity object
+        List<Customer> ReadAll(Func<Customer, bool>? filter = null); 
+        void Update(Customer item);
         void Delete(int id);
         bool IsCustomerExist(int id);
     }

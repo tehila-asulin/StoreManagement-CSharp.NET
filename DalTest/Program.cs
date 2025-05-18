@@ -60,11 +60,11 @@ namespace DalTest
                         Console.WriteLine("בחירה שגויה");
                         break;
                 }
-                select = PrintSubMenu(item); //הדפסת תת תפריט
+                select = PrintSubMenu(item);
             }
         }
 
-        
+
         private static void UpdateProduct()
         {
             try
@@ -132,7 +132,7 @@ namespace DalTest
             return product;
         }
 
-      
+
         private static void UpdateCustomer()
         {
             try
@@ -173,7 +173,7 @@ namespace DalTest
             return customer;
         }
 
-        
+
         private static void UpdateSale()
         {
             try
@@ -247,9 +247,9 @@ namespace DalTest
             }
             catch (Exception e)
             {
-                {
-                    Console.WriteLine(e.Message);
-                }
+
+                Console.WriteLine(e.Message);
+
             }
         }
         private static void ReadAll<T>(ICrud<T> crud)
@@ -269,13 +269,12 @@ namespace DalTest
             }
             catch (Exception e)
             {
-                {
-                    Console.WriteLine(e.Message);
-                }
+
+                Console.WriteLine(e.Message);
+
             }
         }
 
-        //static readonly BlApi.IBl s_bl = BlApi.Factory.Get();
 
         static void Main(string[] args)
         {
@@ -295,7 +294,7 @@ namespace DalTest
                     {
                         case 1:
                             Console.WriteLine("product");
-                            SubMenu("product",s_dal.Product, AddProducts, UpdateProduct);
+                            SubMenu("product", s_dal.Product, AddProducts, UpdateProduct);
                             break;
                         case 2:
                             Console.WriteLine("customer");
@@ -322,10 +321,7 @@ namespace DalTest
             Console.ReadLine();
 
 
-            ///  catch איך יודעים איזה סוג שגיאה לתפוס מה צריך לכתוב בו
-            ///  read,readall,create האם זה נכון?
-            /// פונקציה מחיקה log האם זה נכון
-            /// האם לעשות גם תיקיות לפי השנים
+
         }
     }
 

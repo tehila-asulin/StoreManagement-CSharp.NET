@@ -9,11 +9,11 @@ namespace BlApi
 {
     public interface ISale
     {
-        int Create(Sale item); //Creates new entity object in DAL
-        Sale? Read(int id); //Reads entity object by its ID 
+        int Create(Sale item); 
+        Sale? Read(int id);
         Sale? Read(Func<Sale, bool> filter);
-        List<Sale> ReadAll(Func<Sale, bool>? filter = null); //stage 1 only, Reads all entity objects
-        void Update(Sale item); //Updates entity object
+        List<Sale> ReadAll(Func<Sale, bool>? filter = null); 
+        void Update(Sale item); 
         void Delete(int id);
     }
 }

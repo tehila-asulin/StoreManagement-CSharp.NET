@@ -31,7 +31,6 @@ namespace UI
             {
                 bl.product.Create(new Product
                 {
-                    Barcode = int.Parse(txtBarcode.Text),
                     ProductName = txtName.Text,
                     Category = (Category)Enum.Parse(typeof(Category), comboCategory.Text),
                     Price = double.Parse(txtPrice.Text),

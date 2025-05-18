@@ -10,21 +10,21 @@ public static class Initialization
 
     private static void creaProduct()
     {
-        s_dal.Product.Create(new Product(0, "milk", Category.Milky, 4.5, 50));
-        s_dal.Product.Create(new Product(0, "chocolate", Category.Milky, 3, 30));
-        s_dal.Product.Create(new Product(0, "delicacy", Category.Milky, 2.5, 20));
-        s_dal.Product.Create(new Product(0, "tomato", Category.FruitVegetables, 4, 30));
-        s_dal.Product.Create(new Product(0, "cucumber", Category.FruitVegetables, 5, 30));
-        s_dal.Product.Create(new Product(0, "carrot", Category.FruitVegetables, 3, 30));
-        s_dal.Product.Create(new Product(0, "candy\r\n", Category.Sweets, 1, 100));
-        s_dal.Product.Create(new Product(0, "Bamba", Category.Sweets, 4, 60));
-        s_dal.Product.Create(new Product(0, "Beasley", Category.Sweets, 5.5, 70));
-        s_dal.Product.Create(new Product(0, "potato chips\r\n", Category.Sweets, 3.5, 70));
-        s_dal.Product.Create(new Product(0, "bread", Category.Breads, 5, 30));
-        s_dal.Product.Create(new Product(0, "buns", Category.Breads, 11, 25));
-        s_dal.Product.Create(new Product(0, "pita bread\r\n", Category.Breads, 14, 20));
-        s_dal.Product.Create(new Product(0, "Bleach", Category.Cleanliness, 18, 10));
-        s_dal.Product.Create(new Product(0, "Window spray", Category.Cleanliness, 14, 20));
+        s_dal.Product.Create(new Product(0, "חלב", Category.Milky, 4.5, 50));
+        s_dal.Product.Create(new Product(0, "שוקולד", Category.Milky, 3, 30));
+        s_dal.Product.Create(new Product(0, "גבינה", Category.Milky, 2.5, 20));
+        s_dal.Product.Create(new Product(0, "עגבניה", Category.FruitVegetables, 4, 30));
+        s_dal.Product.Create(new Product(0, "מלפפון", Category.FruitVegetables, 5, 30));
+        s_dal.Product.Create(new Product(0, "גזר", Category.FruitVegetables, 3, 30));
+        s_dal.Product.Create(new Product(0, "סוכריה", Category.Sweets, 1, 100));
+        s_dal.Product.Create(new Product(0, "במבה", Category.Sweets, 4, 60));
+        s_dal.Product.Create(new Product(0, "ביסלי", Category.Sweets, 5.5, 70));
+        s_dal.Product.Create(new Product(0, "צ'יפס", Category.Sweets, 3.5, 70));
+        s_dal.Product.Create(new Product(0, "לחם", Category.Breads, 5, 30));
+        s_dal.Product.Create(new Product(0, "לחמניה", Category.Breads, 11, 25));
+        s_dal.Product.Create(new Product(0, "פיתה", Category.Breads, 14, 20));
+        s_dal.Product.Create(new Product(0, "מגבונים", Category.Cleanliness, 18, 10));
+        s_dal.Product.Create(new Product(0, "ספריי חלונות", Category.Cleanliness, 14, 20));
 
     }
 
@@ -37,13 +37,13 @@ public static class Initialization
 
     private static void createCustomer()
     {
-        s_dal.Customer.Create(new Customer(111, "shani", 123456, "jerusalem"));
-        s_dal.Customer.Create(new Customer(222, "teila", 123456, "tel aviv"));
-        s_dal.Customer.Create(new Customer(333, "miri", 123456,null));
+        s_dal.Customer.Create(new Customer(111, "שני", 123456, "ירושלים"));
+        s_dal.Customer.Create(new Customer(222, "תהילה", 123456, "תל אביב"));
+        s_dal.Customer.Create(new Customer(333, "מירי", 123456,"חיפה"));
     }
     public static void Initialize()
     {
-       s_dal = DalApi.Factory.Get;
+        s_dal = DalApi.Factory.Get;
         creaProduct();
         createCustomer();   
         createSale();

@@ -24,25 +24,23 @@ namespace Dal
         {
             try
             {
+                int nextId = Config.CodeProduct;
                 LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName,
                                       MethodBase.GetCurrentMethod().Name,
-                                      $"insert product in id:{item.Barcode}");
+                                      $"insert product in id:{nextId}");
 
                 XElement productXml = XElement.Load(filePath);
+                XElement arrayOfProduct = productXml;
 
-                var arrayOfProduct = productXml.Element("ArrayOfProduct");
                 if (arrayOfProduct == null)
-                {
-                    arrayOfProduct = new XElement("ArrayOfProduct");
-                    productXml.Add(arrayOfProduct);
-                }
+                    throw new Exception("Root element 'ArrayOfProduct' not found in XML."); //
 
-                // Check if product exists
-                if (productXml.Descendants(PRODUCTID).Any(p => int.Parse(p.Value) == item.Barcode))
-                    throw new DalIdExistException($"Product with id {item.Barcode} already exists.");
+
+                if (productXml.Descendants(PRODUCTID).Any(p => int.Parse(p.Value) == nextId))
+                    throw new DalIdExistException($"Product with id {nextId} already exists.");
 
                 arrayOfProduct.Add(new XElement(PRODUCT,
-                    new XElement(PRODUCTID, item.Barcode),
+                    new XElement(PRODUCTID, nextId),
                     new XElement(PRODUCTNAME, item.ProductName),
                     new XElement(PRICE, item.Price),
                     new XElement(QUANTITYONSTOCK, item.QuantityStock),

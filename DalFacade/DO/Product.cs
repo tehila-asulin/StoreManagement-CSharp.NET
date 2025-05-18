@@ -1,6 +1,5 @@
-﻿
-namespace DO;
-//המוצרים הקיימים בחנות
+﻿namespace DO;
+
 
 public record Product(
     int Barcode,

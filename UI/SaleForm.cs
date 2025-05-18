@@ -43,7 +43,7 @@ namespace UI
             try
             {
                 bl.sale.Create(new Sale(
-                    int.Parse(txtBarcode.Text),
+                    0,
                     int.Parse(txtProductId.Text),
                     int.Parse(txtQuantity.Text),
                     int.Parse(txtTotal.Text),
@@ -89,21 +89,30 @@ namespace UI
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            try
+            if (int.TryParse(txtBarcode.Text, out int barcode))
             {
-                var id = (int)dataGridView1.SelectedRows[0].Cells["BarcodeSale"].Value;
-                bl.sale.Delete(id);
-                LoadData();
+                try
+                {
+                    bl.sale.Delete(barcode);
+                    LoadData();
+                    MessageBox.Show("המבצע נמחק בהצלחה.");
+                }
+                catch (BLIdNotExistException ex)
+                {
+                    MessageBox.Show("לא ניתן למחוק מבצע שלא קיים: " + ex.Message);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("שגיאה במחיקה: " + ex.Message);
+                }
             }
-            catch (BLIdNotExistException ex)
+            else
             {
-                MessageBox.Show("לא ניתן למחוק מבצע שלא קיים: " + ex.Message);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("שגיאה במחיקה: " + ex.Message);
+                MessageBox.Show("יש להכניס קוד תקני.");
             }
         }
+
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -127,7 +136,7 @@ namespace UI
 
         private void button2_Click(object sender, EventArgs e)
         {
-            LoadData(); 
+            LoadData();
         }
     }
 }
