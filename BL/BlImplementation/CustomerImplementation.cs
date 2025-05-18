@@ -37,9 +37,18 @@ namespace BlImplementation
             }
         }
 
-        public bool IsCustomerExist()
+        public bool IsCustomerExist(int id)
         {
-            return false; // לא ממומש עדיין
+            try
+            {
+                return Read(id) != null;
+            }
+            catch(Exception ex)
+            {
+
+            }
+            return false;
+            
         }
 
         public Customer? Read(int id)

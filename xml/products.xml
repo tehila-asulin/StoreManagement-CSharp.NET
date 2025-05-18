@@ -77,7 +77,7 @@
       <barcode>1100</barcode>
       <productName>bread</productName>
       <price>5</price>
-      <quantityInStock>30</quantityInStock>
+      <quantityInStock>50</quantityInStock>
       <category>Breads</category>
     </Product>
     <Product>
@@ -92,7 +92,7 @@
       <productName>pita bread
 </productName>
       <price>14</price>
-      <quantityInStock>20</quantityInStock>
+      <quantityInStock>15</quantityInStock>
       <category>Breads</category>
     </Product>
     <Product>

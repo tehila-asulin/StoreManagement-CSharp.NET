@@ -11,7 +11,7 @@ namespace BlImplementation
     {
         private readonly DalApi.IDal _dal = DalApi.Factory.Get;
 
-        public List<SaleInProduct> AddProductToOrder(Order order, int productId, int amount, int idCustomer)
+        public List<SaleInProduct> AddProductToOrder(Order order, int productId, int amount, bool isPreferred)
         {
             var product = _dal.Product.Read(productId)
                 ?? throw new BLIdNotExistException("המוצר עם הברקוד " + productId + " לא נמצא");
@@ -37,15 +37,7 @@ namespace BlImplementation
                 };
                 order.ProductsInOrder.Add(existing);
             }
-            try {
-                bool isPreferred = _dal.Customer.Read(idCustomer) != null;
-                SearchSaleForProduct(existing, isPreferred);
-            }
-            catch(Exception e) {
-                //כאשר נכנסים לכאן זה אומר שהלקוח אינו נמצא ברשימת הלקוחות ולכן הוא לא מועדף
-                //ולכן תוספים כאן את השגיאה שלהread  על מנת שהמוצר יתווסף למרות השגיאה
-            }
-
+            SearchSaleForProduct(existing, isPreferred);
             CalcTotalPriceForProduct(existing);
             CalcTotalPrice(order);
 

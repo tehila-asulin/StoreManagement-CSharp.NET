@@ -1,0 +1,40 @@
+18/05/2025 00:40:22	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 00:41:37	Dal.ProductImplementation.Read:	read product in id: 700
+18/05/2025 00:42:47	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 00:46:27	Dal.ProductImplementation.Read:	read product in id: 1300
+18/05/2025 00:47:18	Dal.CustomerImplementation.Read:	read customer in id: 222
+18/05/2025 00:47:18	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 00:47:47	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 00:48:08	Dal.ProductImplementation.Read:	read product in id: 1300
+18/05/2025 00:52:12	Dal.CustomerImplementation.Read:	read customer in id: 222
+18/05/2025 00:52:58	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 01:06:01	Dal.ProductImplementation.Read:	read product in id: 1300
+18/05/2025 01:06:15	Dal.ProductImplementation.Update:	update product in id: 1300
+18/05/2025 01:35:11	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 01:35:23	Dal.CustomerImplementation.Read:	read customer in id: 111
+18/05/2025 01:35:23	Dal.ProductImplementation.Read:	read product in id: 1100
+18/05/2025 01:35:32	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 01:35:48	Dal.CustomerImplementation.Read:	read customer in id: 456
+18/05/2025 01:35:48	Dal.CustomerImplementation.Read:	Exception: Customer with id 456 not found.
+18/05/2025 01:38:13	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 01:38:23	Dal.CustomerImplementation.Read:	read customer in id: 456
+18/05/2025 01:38:23	Dal.CustomerImplementation.Read:	Exception: Customer with id 456 not found.
+18/05/2025 01:38:23	Dal.ProductImplementation.Read:	read product in id: 1100
+18/05/2025 01:38:23	Dal.SaleImplementation.ReadAll:	read all sales
+18/05/2025 01:41:52	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 01:50:24	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 01:55:47	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 01:56:25	Dal.ProductImplementation.Read:	read product in id: 1100
+18/05/2025 02:21:27	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 02:21:37	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 02:22:25	Dal.ProductImplementation.Read:	read product in id: 1100
+18/05/2025 02:25:14	Dal.ProductImplementation.Update:	update product in id: 1100
+18/05/2025 02:27:32	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 02:29:09	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 02:30:37	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 02:32:05	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 02:37:28	Dal.ProductImplementation.ReadAll:	read all products
+18/05/2025 02:37:36	Dal.CustomerImplementation.Read:	read customer in id: -1
+18/05/2025 02:37:36	Dal.CustomerImplementation.Read:	Exception: Customer with id -1 not found.
+18/05/2025 02:37:36	Dal.ProductImplementation.Read:	read product in id: 1200
+18/05/2025 02:37:36	Dal.SaleImplementation.ReadAll:	read all sales

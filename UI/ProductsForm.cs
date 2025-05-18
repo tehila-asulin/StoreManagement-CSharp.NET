@@ -22,7 +22,7 @@ namespace UI
                 ? bl.product.ReadAll()
                 : bl.product.ReadAll(p => p.Category.ToString().Contains(filter, StringComparison.OrdinalIgnoreCase));
 
-            dataGridView1.DataSource = products.Select(p => new { p.Barcode, p.ProductName, p.Price, p.Category }).ToList();
+            dataGridView1.DataSource = products.Select(p => new { p.Barcode, p.ProductName, p.Price, p.Category, p.QuantityStock }).ToList();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -53,15 +53,34 @@ namespace UI
         {
             try
             {
-                var id = (int)dataGridView1.SelectedRows[0].Cells["Barcode"].Value;
-                bl.product.Update(new Product
+                if (!int.TryParse(txtBarcode.Text, out int barcode))
                 {
-                    Barcode = id,
-                    ProductName = txtName.Text,
-                    Category = (Category)Enum.Parse(typeof(Category), comboCategory.Text),
-                    Price = double.Parse(txtPrice.Text),
-                    QuantityStock = int.Parse(txtQuantity.Text)
-                });
+                    MessageBox.Show("ברקוד לא תקין");
+                    return;
+                }
+
+              
+                Product existing = bl.product.Read(barcode);
+                if (existing == null)
+                {
+                    MessageBox.Show("המוצר לא קיים");
+                    return;
+                }
+
+              
+                if (!string.IsNullOrWhiteSpace(txtName.Text))
+                    existing.ProductName = txtName.Text;
+
+                if (!string.IsNullOrWhiteSpace(comboCategory.Text))
+                    existing.Category = (Category)Enum.Parse(typeof(Category), comboCategory.Text);
+
+                if (!string.IsNullOrWhiteSpace(txtPrice.Text))
+                    existing.Price = double.Parse(txtPrice.Text);
+
+                if (!string.IsNullOrWhiteSpace(txtQuantity.Text))
+                    existing.QuantityStock = int.Parse(txtQuantity.Text);
+
+                bl.product.Update(existing);
                 LoadData();
             }
             catch (BLIdNotExistException ex)
@@ -70,9 +89,10 @@ namespace UI
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show( ex.Message);
             }
         }
+
 
         private void btnDelete_Click(object sender, EventArgs e)
         {

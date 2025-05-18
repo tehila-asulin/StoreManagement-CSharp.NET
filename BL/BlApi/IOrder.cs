@@ -1,4 +1,5 @@
 ﻿using BO;
+using DO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace BlApi
     {
 
        
-        public List<SaleInProduct> AddProductToOrder(Order order, int productId, int amount, int idCustomer);
+        public List<SaleInProduct> AddProductToOrder(Order order, int productId, int amount, bool isPreferred);
        
         void CalcTotalPriceForProduct(ProductInOrder productInOrder);
         

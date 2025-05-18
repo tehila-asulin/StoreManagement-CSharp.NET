@@ -15,6 +15,6 @@ namespace BlApi
         List<Customer> ReadAll(Func<Customer, bool>? filter = null); //stage 1 only, Reads all entity objects
         void Update(Customer item); //Updates entity object
         void Delete(int id);
-        bool IsCustomerExist();
+        bool IsCustomerExist(int id);
     }
 }
