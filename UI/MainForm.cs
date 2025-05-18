@@ -9,6 +9,7 @@ namespace UI
         public MainForm()
         {
             InitializeComponent();
+            ModernStyleHelper.ApplyModernStyle(this);
         }
 
         private void btnAdmin_Click(object sender, EventArgs e)

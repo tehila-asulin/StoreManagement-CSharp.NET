@@ -84,7 +84,7 @@ namespace UI
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(0, 343);
+            btnAdd.Location = new Point(12, 343);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(75, 34);
             btnAdd.TabIndex = 6;
@@ -93,7 +93,7 @@ namespace UI
             // 
             // btnUpdate
             // 
-            btnUpdate.Location = new Point(81, 343);
+            btnUpdate.Location = new Point(98, 345);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(75, 34);
             btnUpdate.TabIndex = 7;
@@ -102,7 +102,7 @@ namespace UI
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(175, 343);
+            btnDelete.Location = new Point(200, 343);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(75, 34);
             btnDelete.TabIndex = 8;
@@ -166,7 +166,7 @@ namespace UI
             // 
             // btProductById
             // 
-            btProductById.Location = new Point(256, 343);
+            btProductById.Location = new Point(296, 348);
             btProductById.Name = "btProductById";
             btProductById.Size = new Size(154, 29);
             btProductById.TabIndex = 15;
@@ -176,7 +176,7 @@ namespace UI
             // 
             // button1
             // 
-            button1.Location = new Point(416, 343);
+            button1.Location = new Point(456, 348);
             button1.Name = "button1";
             button1.Size = new Size(185, 29);
             button1.TabIndex = 16;

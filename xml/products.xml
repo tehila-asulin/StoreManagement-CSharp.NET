@@ -100,9 +100,9 @@
   </Product>
   <Product>
     <barcode>1500</barcode>
-    <productName>ספריי חלונות</productName>
-    <price>14</price>
-    <quantityInStock>20</quantityInStock>
+    <productName>אקנומיקה</productName>
+    <price>25</price>
+    <quantityInStock>15</quantityInStock>
     <category>Cleanliness</category>
   </Product>
 </ArrayOfProduct>

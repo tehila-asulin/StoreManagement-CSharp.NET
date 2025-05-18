@@ -4,6 +4,7 @@ using System.Linq;
 using System.Windows.Forms;
 using BlApi;
 using BO;
+using UI;
 
 namespace PL
 {
@@ -17,6 +18,7 @@ namespace PL
         public OrderForm()
         {
             InitializeComponent();
+            ModernStyleHelper.ApplyModernStyle(this);
             InitProductComboBox();
             RefreshOrderDisplay();
         }

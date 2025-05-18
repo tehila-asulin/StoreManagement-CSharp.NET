@@ -9,6 +9,7 @@ namespace UI
         public AdminPanel()
         {
             InitializeComponent();
+            ModernStyleHelper.ApplyModernStyle(this);
         }
 
         private void btnCustomers_Click(object sender, EventArgs e)

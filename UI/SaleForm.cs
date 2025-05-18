@@ -13,6 +13,7 @@ namespace UI
         public SalesForm()
         {
             InitializeComponent();
+            ModernStyleHelper.ApplyModernStyle(this);
             LoadData();
         }
 

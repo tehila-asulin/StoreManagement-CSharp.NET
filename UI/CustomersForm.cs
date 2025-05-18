@@ -13,6 +13,7 @@ namespace UI
         public CustomersForm()
         {
             InitializeComponent();
+            ModernStyleHelper.ApplyModernStyle(this);
             LoadData();
         }
 

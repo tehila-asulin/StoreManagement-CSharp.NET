@@ -13,6 +13,7 @@ namespace UI
         public ProductsForm()
         {
             InitializeComponent();
+            ModernStyleHelper.ApplyModernStyle(this);
             LoadData();
         }
 
@@ -58,7 +59,7 @@ namespace UI
                     return;
                 }
 
-              
+
                 Product existing = bl.product.Read(barcode);
                 if (existing == null)
                 {
@@ -66,7 +67,7 @@ namespace UI
                     return;
                 }
 
-              
+
                 if (!string.IsNullOrWhiteSpace(txtName.Text))
                     existing.ProductName = txtName.Text;
 
@@ -88,7 +89,7 @@ namespace UI
             }
             catch (Exception ex)
             {
-                MessageBox.Show( ex.Message);
+                MessageBox.Show(ex.Message);
             }
         }
 
