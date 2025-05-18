@@ -55,10 +55,10 @@ namespace PL
                     var product = _bl.product.Read(code);
                     int quantity = int.TryParse(textBoxQuantity.Text, out int q) && q > 0 ? q : 1;
                     int customerCode = int.TryParse(textBoxCustomerCode.Text, out int custCode) ? custCode : -1;
-                  
+                    try { currentOrder.IsFevorite = _bl.customer.IsCustomerExist(customerCode); } 
+                    catch (Exception exc){ }
                    
-                    _bl.order.AddProductToOrder(currentOrder, product.Barcode, quantity, _bl.customer.IsCustomerExist(customerCode));
-                    RefreshOrderDisplay();
+                    _bl.order.AddProductToOrder(currentOrder, product.Barcode, quantity);
                 }
                 catch (BLIdNotExistException ex)
                 {
@@ -79,8 +79,9 @@ namespace PL
                 {
                     int quantity = int.TryParse(textBoxQuantity.Text, out int q) && q > 0 ? q : 1;
                     int customerCode = int.TryParse(textBoxCustomerCode.Text, out int code) ? code : -1;
-
-                    _bl.order.AddProductToOrder(currentOrder, product.Barcode, quantity, _bl.customer.IsCustomerExist(customerCode));
+                    try { currentOrder.IsFevorite = _bl.customer.IsCustomerExist(customerCode); }
+                    catch (Exception exc) { }
+                    _bl.order.AddProductToOrder(currentOrder, product.Barcode, quantity);
                     RefreshOrderDisplay();
                 }
                 catch (BLIdNotExistException ex)

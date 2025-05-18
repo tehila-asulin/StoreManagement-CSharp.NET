@@ -15,6 +15,6 @@ namespace BlApi
         List<Product> ReadAll(Func<Product, bool>? filter = null); //stage 1 only, Reads all entity objects
         void Update(Product item); //Updates entity object
         void Delete(int id);
-        void SaleIsValide (int code,bool isFavorite);
+       
     }
 }

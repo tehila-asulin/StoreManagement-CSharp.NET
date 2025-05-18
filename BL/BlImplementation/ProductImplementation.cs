@@ -76,11 +76,7 @@ namespace BlImplementation
             }
         }
 
-        void IProduct.SaleIsValide(int code, bool isFavorite)
-        {
-            // עדיין לא מומש
-        }
-
+     
         void IProduct.Update(Product item)
         {
             try

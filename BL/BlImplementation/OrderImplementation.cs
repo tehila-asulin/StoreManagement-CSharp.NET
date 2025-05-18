@@ -11,7 +11,7 @@ namespace BlImplementation
     {
         private readonly DalApi.IDal _dal = DalApi.Factory.Get;
 
-        public List<SaleInProduct> AddProductToOrder(Order order, int productId, int amount, bool isPreferred)
+        public List<SaleInProduct> AddProductToOrder(Order order, int productId, int amount)
         {
             var product = _dal.Product.Read(productId)
                 ?? throw new BLIdNotExistException("המוצר עם הברקוד " + productId + " לא נמצא");
@@ -37,7 +37,7 @@ namespace BlImplementation
                 };
                 order.ProductsInOrder.Add(existing);
             }
-            SearchSaleForProduct(existing, isPreferred);
+            SearchSaleForProduct(existing, order.IsFevorite);
             CalcTotalPriceForProduct(existing);
             CalcTotalPrice(order);
 
