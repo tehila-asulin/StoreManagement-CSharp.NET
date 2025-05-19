@@ -74,12 +74,14 @@ namespace BlImplementation
 
             foreach (var sale in product.SalesOfProduct)
             {
-                if (quantity >= sale.CountForSale)
+                
+                int times = quantity / sale.CountForSale;
+                if (times > 0)
                 {
-                    total += sale.Price;
-                    quantity -= sale.CountForSale;
-                    appliedSales.Add(sale);
-                    break; 
+                    total += times * sale.Price;
+                    quantity -= times * sale.CountForSale;
+
+                    appliedSales.Add(sale); 
                 }
             }
 
@@ -88,6 +90,7 @@ namespace BlImplementation
             product.TotalPrice = total;
             product.SalesOfProduct = appliedSales;
         }
+
 
         public void CalcTotalPrice(Order order)
         {

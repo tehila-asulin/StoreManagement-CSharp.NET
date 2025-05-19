@@ -1,0 +1,37 @@
+19/05/2025 09:42:26	Dal.ProductImplementation.ReadAll:	read all products
+19/05/2025 09:43:25	Dal.ProductImplementation.Read:	read product in id: 1000
+19/05/2025 09:43:25	Dal.CustomerImplementation.Read:	read customer in id: 111
+19/05/2025 09:43:25	Dal.ProductImplementation.Read:	read product in id: 1000
+19/05/2025 09:43:25	Dal.SaleImplementation.ReadAll:	read all sales
+19/05/2025 09:43:37	Dal.ProductImplementation.Read:	read product in id: 1000
+19/05/2025 09:43:37	Dal.CustomerImplementation.Read:	read customer in id: 111
+19/05/2025 09:43:37	Dal.ProductImplementation.Read:	read product in id: 1000
+19/05/2025 09:43:37	Dal.SaleImplementation.ReadAll:	read all sales
+19/05/2025 09:46:03	Dal.ProductImplementation.ReadAll:	read all products
+19/05/2025 09:46:15	Dal.ProductImplementation.Read:	read product in id: 1000
+19/05/2025 09:46:15	Dal.CustomerImplementation.Read:	read customer in id: 111
+19/05/2025 09:46:15	Dal.ProductImplementation.Read:	read product in id: 1000
+19/05/2025 09:46:15	Dal.SaleImplementation.ReadAll:	read all sales
+19/05/2025 09:47:04	Dal.ProductImplementation.ReadAll:	read all products
+19/05/2025 09:47:28	Dal.CustomerImplementation.Read:	read customer in id: 111
+19/05/2025 09:47:28	Dal.ProductImplementation.Read:	read product in id: 1000
+19/05/2025 09:47:28	Dal.SaleImplementation.ReadAll:	read all sales
+19/05/2025 09:48:23	Dal.ProductImplementation.ReadAll:	read all products
+19/05/2025 09:48:32	Dal.ProductImplementation.Read:	read product in id: 1000
+19/05/2025 09:48:32	Dal.CustomerImplementation.Read:	read customer in id: 111
+19/05/2025 09:48:32	Dal.ProductImplementation.Read:	read product in id: 1000
+19/05/2025 09:48:32	Dal.SaleImplementation.ReadAll:	read all sales
+19/05/2025 09:51:20	Dal.ProductImplementation.ReadAll:	read all products
+19/05/2025 09:51:28	Dal.ProductImplementation.Read:	read product in id: 1000
+19/05/2025 09:51:28	Dal.CustomerImplementation.Read:	read customer in id: 111
+19/05/2025 09:51:28	Dal.ProductImplementation.Read:	read product in id: 1000
+19/05/2025 09:51:29	Dal.SaleImplementation.ReadAll:	read all sales
+19/05/2025 09:52:14	Dal.ProductImplementation.ReadAll:	read all products
+19/05/2025 09:52:23	Dal.ProductImplementation.Read:	read product in id: 1000
+19/05/2025 09:52:23	Dal.CustomerImplementation.Read:	read customer in id: 111
+19/05/2025 09:52:23	Dal.ProductImplementation.Read:	read product in id: 1000
+19/05/2025 09:52:23	Dal.SaleImplementation.ReadAll:	read all sales
+19/05/2025 09:52:25	Dal.ProductImplementation.Read:	read product in id: 1000
+19/05/2025 09:52:25	Dal.CustomerImplementation.Read:	read customer in id: 111
+19/05/2025 09:52:25	Dal.ProductImplementation.Read:	read product in id: 1000
+19/05/2025 09:52:25	Dal.SaleImplementation.ReadAll:	read all sales

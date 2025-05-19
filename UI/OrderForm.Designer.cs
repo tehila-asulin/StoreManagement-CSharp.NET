@@ -50,7 +50,7 @@
             // 
             // textBoxProductCode
             // 
-            textBoxProductCode.Location = new Point(477, 71);
+            textBoxProductCode.Location = new Point(510, 71);
             textBoxProductCode.Name = "textBoxProductCode";
             textBoxProductCode.Size = new Size(100, 27);
             textBoxProductCode.TabIndex = 3;
@@ -156,7 +156,6 @@
             Controls.Add(buttonFinishOrder);
             Name = "OrderForm";
             Text = "קופה - הזמנה";
-           
             ((System.ComponentModel.ISupportInitialize)dataGridViewOrder).EndInit();
             ResumeLayout(false);
             PerformLayout();

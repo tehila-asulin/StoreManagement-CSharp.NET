@@ -165,8 +165,33 @@ namespace Dal
                 LogManager.writeToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName,
                                       MethodBase.GetCurrentMethod().Name,
                                       $"update sale in id:{item.BarcodeSale}");
-                Delete(item.BarcodeSale);
-                Create(item);
+
+                using (StreamReader sr = new StreamReader(filePath))
+                {
+                    list = serializer.Deserialize(sr) as List<Sale>;
+                }
+
+                var existingSale = list.FirstOrDefault(s => s.BarcodeSale == item.BarcodeSale);
+                if (existingSale == null)
+                    throw new DalIdNotFoundException($"Sale with id {item.BarcodeSale} not found.");
+
+                var updatedSale = new Sale(
+                    item.BarcodeSale,
+                    item.ProductId,
+                    item.RequiredItems,
+                    item.TotalPrice,
+                    item.IsCustomersClub,
+                    item.BeginingSale,
+                    item.EndSale
+                );
+
+                list.Remove(existingSale);
+                list.Add(updatedSale);
+
+                using (StreamWriter sw = new StreamWriter(filePath))
+                {
+                    serializer.Serialize(sw, list);
+                }
             }
             catch (Exception ex)
             {
@@ -176,6 +201,8 @@ namespace Dal
                 throw;
             }
         }
+
+
     }
 
 }

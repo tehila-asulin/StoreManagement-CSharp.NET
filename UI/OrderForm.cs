@@ -57,21 +57,33 @@ namespace PL
                     var product = _bl.product.Read(code);
                     int quantity = int.TryParse(textBoxQuantity.Text, out int q) && q > 0 ? q : 1;
                     int customerCode = int.TryParse(textBoxCustomerCode.Text, out int custCode) ? custCode : -1;
-                    try { currentOrder.IsFevorite = _bl.customer.IsCustomerExist(customerCode); } 
-                    catch (Exception exc){ }
-                   
+
+                    try
+                    {
+                        currentOrder.IsFevorite = _bl.customer.IsCustomerExist(customerCode);
+                    }
+                    catch (Exception) { }
+
                     _bl.order.AddProductToOrder(currentOrder, product.Barcode, quantity);
+
+                  
+                    RefreshOrderDisplay();
                 }
                 catch (BLIdNotExistException ex)
                 {
-                    MessageBox.Show( ex.Message);
+                    MessageBox.Show(ex.Message);
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
             }
+            else
+            {
+                MessageBox.Show("קוד מוצר לא תקין.");
+            }
         }
+
 
         private void buttonAddBySelect_Click(object sender, EventArgs e)
         {
@@ -92,7 +104,7 @@ namespace PL
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show( ex.Message);
+                    MessageBox.Show(ex.Message);
                 }
             }
             else
@@ -112,7 +124,7 @@ namespace PL
             }
             catch (Exception ex)
             {
-                MessageBox.Show( ex.Message);
+                MessageBox.Show(ex.Message);
             }
         }
     }
